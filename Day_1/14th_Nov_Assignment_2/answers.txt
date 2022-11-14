@@ -1,0 +1,11 @@
+1. How to display images in title bar?
+A) The following steps should be followed:
+    i) Pick the image to be displayed in the title bar
+    ii) Convert it into a ".ico" file and rename the file as "favicon.ico"
+    iii) Place it in the directory where the html file is present.
+
+    Ensure the following code is in the head tag: 
+        <link rel="shortcut icon" href="your_image_path_and_name.ico" />
+
+2. What is the purpose of "alt" attribute of img tag?
+A) If the image cannot be loaded properly, the text within the alt attribute is displayed. 
