@@ -1,0 +1,7 @@
+
+Assignment
+~~~~~~~~~~~
+1.  What is JSON?  
+2.   What is HTTP Status codes?
+3.   What is the meaning of 500 Status codes?
+4.   What is No-Sql Databases?

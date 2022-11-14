@@ -1,0 +1,47 @@
+FrontEnd Foundation : 3 Weeks
+		HTML, CSS, JS, HTML5 / CSS3, Bootstrap, SASS, LESS
+		
+FrontEnd Advanced :	5 Weeks
+		JavaScript
+		jQuery
+		Node / Webpack
+		Angular
+		React JS
+	
+	
+	
+	
+Break Timings:
+	1. Lunch    12:30 to 1:15 
+	2. Break-1  :  3:00 to 3:15
+	3. Break-2  :  5:00 to 5:15
+	
+	
+	10:30 am  to 7:30 pm
+	
+	
+
+Client Side Tech
+Server Side Tech
+	
+	
+	
+G1:	html, css, javascript
+--------------------------------------------
+G2:	Angular, React, jQuery, Bootstrap
+-----------------------------------------------
+G3:  json / xml 
+---------------------------------------------
+G4: Server Side Tech:  php, python,  node js, java, .net,  web-api,  firebase, cloud
+-------------------------------------------------------
+G5:  Databases :  oracle, sql server, mysql, mongodb
+	
+	
+	
+	
+	
+github
+
+	
+	
+	

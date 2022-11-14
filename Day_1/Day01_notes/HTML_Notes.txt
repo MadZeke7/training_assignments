@@ -1,0 +1,175 @@
+
+Creating Web Pages using HTML
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+HTML, CSS, JavaScript
+
+	HTML :		Structure for the web pages
+	CSS :			Styles for the web pages
+	JavaScript :  Add behaviour to the web pages
+
+	
+
+HTML	:		Presentation language
+					Hyper Text Markup Language
+					
+					
+				<p>	text </p>				
+				<ename>Scott</ename>
+				
+					
+		
+-->  Tags  or  Elements, Attributes
+
+		<p>Welcome to HTML</p>
+		<img  src="Image1.jpg"  width="300"  height="200"   />
+
+--> document structure: 
+   
+   <html>
+        <head></head>
+        <body></body>
+    </html>
+	
+
+-->  Types of tags:
+        a.  Single Tags :   <br />   <input />  <img /> <hr /> <link /> etc...
+        b.  Pair Tags  :   html, head, body, p, div, etc....
+		
+				<p>   </p>
+				<html> </html>
+------------------------------------------------------------------------------------
+
+Environment Setup
+~~~~~~~~~~~~~~~~~~~
+
+1.  Editor 		:		Notepad / Notepad++ / VS Code 
+
+		https://code.visualstudio.com/download
+		https://notepad-plus-plus.org/downloads/
+
+2.  Browser	:			Chrome / Edge / FF / Safari
+--------------------------------------------------------------------------------------------------
+
+In VS Code:
+
+
+1. File  -->  Open Folder   --> Choose Folder
+2. Explorer -->	New File
+		Eg:  Demo1.html
+		
+		
+HTML Tags
+~~~~~~~~~~~
+
+-->  Heading Tags:
+        h1, h2, h3, h4, h5, h6
+
+-->  Paragraph and Span :       <p>, <span>
+
+
+
+
+
+Block Elements and In-line Elements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Block:      p, h1...h6, 
+Inline:     span, a, img,  etc..
+
+
+
+
+
+
+Images in HTML
+
+    <img  />  
+
+        Attributes:
+            a. src -  source of the Images
+            b. height and width
+            c. border
+
+
+            <img  src="Image1.jpg"     />
+            <img  src="Images/Image1.jpg"     />
+            <img  border="2"  src="https://webneel.com/wallpaper/sites/default/files/images/08-2018/3-nature-wallpaper-mountain.jpg"  width="300"  height="200"    />
+
+List Tags
+~~~~~~~~~~
+
+1. Ordered List  :  <ol>
+2. Unordered List :   <ul>
+3. List Item :   <li>
+
+Note:  <li> tag is the child tag of <ol> / <ul>.
+
+
+Eg:
+			<ul type="disc/square/circle">
+					<li>Item1</li>
+					<li>Item2</li>
+					...
+			</ul>
+
+
+			<ol type="1/A/a/i/I">>
+					<li>Item1</li>
+					<li>Item2</li>
+					...
+			</ol>
+
+
+
+
+Tables
+~~~~~~
+
+1. Table
+2. TR   :  Table Row
+3. TH / TD :  Table Header / Table Data
+
+
+	<table>
+		<tr>
+			<th></th>
+			<th></th>
+			<th></th>
+			....
+		</tr>
+		
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			....
+		</tr>
+	</table>
+
+
+
+
+
+
+Working with Hyperlinks (Navigations)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+        <a>Login</a>   
+		
+        <a href="">Login</a>   
+        
+Internal
+        <a href="Login.html">Login</a>  
+	
+External : 		required  absolute url
+        <a href="https://twitter.com/i/flow/login">Login</a>
+
+Inline:		within the same page
+        <a href="#top">Back to Top</a>
+		
+
+Note:   In the above line  "top"  is  id of the tag. 
+			
+			<h1  id="top"></h1>
