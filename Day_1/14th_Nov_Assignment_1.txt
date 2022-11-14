@@ -1,0 +1,17 @@
+1. What is JSON?  
+A) JSON stands for JavaScript Object Notation. It is a text format used across the web to store and transport data. It stores the data in key value pairs.
+
+
+2. What are HTTP Status codes?
+A) HTTP Status codes are used to indicate the status of an http request sent from a server to client.
+
+
+3. What is the meaning of 500 Status codes?
+A) The HTTP status code 500 is an error response. It means that the server ran into a problem that prevented it from completing the request. 
+
+
+4. What is No-Sql Databases?
+A) NoSQL stands for “not only SQL”. It stores information in JSON documents instead of columns and rows used by relational databases. 
+
+5. What is IIS?
+A) IIS stands for Internet Information Services and it is a Web server for hosting anything on the Web. The web server accepts requests from remote client computers and returns the appropriate response.
