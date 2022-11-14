@@ -12,3 +12,6 @@ A) The HTTP status code 500 is an error response. It means that the server ran i
 
 4. What is No-Sql Databases?
 A) NoSQL stands for “not only SQL”. It stores information in JSON documents instead of columns and rows used by relational databases. 
+
+5. What is IIS?
+A) IIS stands for Internet Information Services and it is a Web server for hosting anything on the Web. The web server accepts requests from remote client computers and returns the appropriate response.
