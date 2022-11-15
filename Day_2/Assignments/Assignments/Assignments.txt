@@ -1,0 +1,23 @@
+Assignment-1
+~~~~~~~~~~~~
+1. Create a Web Page to display products details using html and apply required styles?  (Check the Reference Image).
+
+2.    Apply the following styles to departments page . (Check the Reference Image).
+
+		Hint : Use UL/LI  tags for departments page 
+---------------------------------------------------------------------------------------------------------------		
+Assignment-2
+~~~~~~~~~~~~
+1. How to apply style to first letter of the paragraph?
+
+2. Create a web page to display students details apply the styles as per the following requirements:
+
+		a.  Header Row --  background color, color 
+		b.  All Even Rows  ---   background color, color 
+		c.  All Odd Rows  ---   background color, color 
+		d.  Hover  ---   Change backgroundColor
+		e.  All rows  ---   padding, border-bottom 
+		
+Hint : Check the reference Image 
+
+

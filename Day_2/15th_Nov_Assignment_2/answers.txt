@@ -1,0 +1,17 @@
+1. How to apply style to first letter of the paragraph?
+A) The intended target(first letter in this case) should be enclosed in the span tag. The span tag should then be targeted in the css(inline, internally or externally) to apply the required style.
+    Ex: "<span>H</span>ello" where "H" is enclosed within the span.
+
+2. Create a web page to display students details apply the styles as per the following requirements:
+
+		a.  Header Row --  background color, color 
+		b.  All Even Rows  ---   background color, color 
+		c.  All Odd Rows  ---   background color, color 
+		d.  Hover  ---   Change backgroundColor
+		e.  All rows  ---   padding, border-bottom 
+
+A) Please refer the index.html and the styles.css file.
+
+3.   Why do we use  ~  and >  symbols in css selectors?
+A)  > : It will target elements which are direct children of a particular element.
+    ~ : It will target the siblings of an element.
