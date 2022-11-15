@@ -1,0 +1,58 @@
+ 
+ 
+ 1. Tag Level  (in-line)
+	
+		--  style attribute
+		
+		<tag   style=""></tag>
+		<tag   style="prop:value; prop:value; ........"></tag>
+		<p   style="color:blue;  width : 100px; "></p>		
+	
+ 2. Page Level  (internal)
+ 
+ <head>
+	<style>
+			tagname
+			{
+				prop:value;
+				prop:value;
+				....
+			}
+			
+			
+	</style>
+</head>	
+	
+	
+	 
+ <head>
+	<style>
+			p
+			{
+				 color : blue;
+				 width : 100px;				 
+			}
+			
+			
+	</style>
+</head>	
+ 
+ 
+ 
+color : blue;
+width : 100px;			
+background-color :  green;
+text-align : center;
+height :  200px;
+border-left-width :  10px;
+
+  
+ 3. Project Level (external)
+ 
+	a.   Define the required styles in  *.css file   (File Name : MyStyles.css)
+	b.   Link the *.css file from html page:	
+			<link  rel="stylesheet"  href="MyStyles.css"   />
+		
+			
+ 
+ 
