@@ -1,0 +1,29 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div{
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+img{
+    height:150px;
+}
+
+.name{
+    font-size: 19px;
+}
+
+.signed{
+    color: blue;
+}
+
+.goals{
+    color:red;
+}
