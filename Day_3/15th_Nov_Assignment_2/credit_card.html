@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="credit_card_styles.css">
+    <title>Credit Card</title>
+</head>
+<body>
+    <main>
+        <header>
+            <p>This is a secure 128-bit SSL Encrypted payment. You're safe.</p>
+        </header>
+        <form>
+
+            <div>
+                <input type="radio" name="pizza_size" value="Credit"/>
+                <label>Credit Card(Visa, Mastercard)</label>
+                <input type="radio" name="pizza_size" value="Paypal"/>
+                <label>Paypal</label>
+                <br />
+            </div>
+
+            <div>
+                <label>Card Number</label>
+                <span class="small-text">The 16 digit number on front of the card</span>
+                <br />
+                <input type="text" name="email" class='full-width'/>
+                <br />
+            </div>
+
+            <div class="flex">
+                <div id="exp-block">
+                    <label>Expiration Date</label>
+                    <br />
+                    <select name="month">
+                        <option value="none" disabled selected>Month</option>
+                        <option value="Jan">January</option>
+                        <option value="Feb">February</option>
+                        <option value="Mar">March</option>
+                        <option value="Apr">April</option>
+                        <option value="May">May</option>
+                    </select>
+                    <label> / </label>
+                    <select name="year">
+                        <option value="none" disabled selected>Year</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                    </select>
+                </div>
+
+                <div id="cvv-block">
+                    <label>CVV/CVV2</label>
+                    <br />
+                    <div class="flex">
+                        <input type="number" name="cvv" id="cvv">
+                        <span class="small-text">The last 3 digits displayed on the back of your card</span>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <label>Full Name on the Card</label>
+                <br />
+                <input type='text' name='name' class='full-width'/>
+            </div>
+        </form>
+        
+        <div id="end-info">
+            <p>You will be charged $29.00 per month</p>
+        </div>
+    
+    </main>
+    
+    <!--Button is kept outside, for functionality input submit must be used-->
+    <button id="submit">Complete transaction</button>
+
+</body>
+</html>

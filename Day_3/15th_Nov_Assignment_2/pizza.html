@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pizza_styles.css">
+    <title>Pizza</title>
+</head>
+<body>
+    <header>
+        <h2>Welcome to Italian Pizza</h2>
+        <p>We deliver pizza in 40 minutes max. If not - Pizza's on us!</p>
+    </header>
+    <form>
+        <div>
+            <label>Email</label>
+            <br />
+            <input type="text" name="email"/>
+            <br />
+        </div>
+
+        <div>
+            <label>Phone</label>
+            <br />
+            <input type="number" class='small' name="area" placeholder="Area"/>
+            <input type="number" class='small' name="local1" placeholder="Local"/>
+            <input type="number" class='small' name="local2" placeholder="Local"/>
+            <br />
+        </div>
+
+        <div>
+            <label>Number of slices</label>
+            <br />
+            <input type="number" name="slices"/>
+            <br />
+        </div>
+
+        <div>
+            <label>Pizza Size</label>
+            <br />
+            <input type="radio" name="pizza_size" value="8inch"/>
+            <label>8-inch</label>
+            <input type="radio" name="pizza_size" value="10inch"/>
+            <label>10-inch</label>
+            <input type="radio" name="pizza_size" value="12inch"/>
+            <label>12-inch</label>
+            <input type="radio" name="pizza_size" value="14inch"/>
+            <label>14-inch</label>
+            <br />
+        </div>
+
+        <div>
+            <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
+            <label>Pepperoni</label>
+            <input type="checkbox" id="onions" name="onions" value="onions">
+            <label>Onions</label>
+            <input type="checkbox" id="mushrooms" name="mushrooms" value="mushrooms">
+            <label> Mushrooms</label>
+            <input type="checkbox" id="sausage" name="sausage" value="sausage">
+            <label>Sausage</label>
+            <br />
+        </div>
+
+        <span>*</span>
+        <input type="checkbox" id="submission" name="submission" value="submit">
+        <label> I agree to the Terms and Conditions</label>
+        
+        
+    </form>
+    <button id='submit' type="submit">Order Now</button>
+
+</body>
+</html>
