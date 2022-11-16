@@ -12,5 +12,5 @@ A) Querystring is a string which contains all the variables and their values whe
 4. What is <input type="hidden"/> ? Why do we use?
 A) It hides the field and doesn't show the client the input and it's value. In this way, the user doesn't have to be involved in the process. Hidden fields can also be used to pass information back to scripts.
 
-
-
+5. Diff. between  <input type="submit"/> and <button></button>  ?
+A) The former creates a button that will submit the form with the values entered. The latter will create a button with no inherent functionality.
