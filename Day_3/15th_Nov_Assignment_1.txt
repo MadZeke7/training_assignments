@@ -4,4 +4,5 @@ A)  The user input validation that takes place on the client side is called clie
 2. What are the advantages of performing Validations?
 A)  a. It ensures all the necessary information is correctly formatted.
     b. It helps to take corrective measures to avoid any mismatch between the expected and actual results.
+    c. Server will not have to go through data that is not validated and hence computer power is saved.
 
