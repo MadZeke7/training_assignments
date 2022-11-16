@@ -1,0 +1,159 @@
+						HTML Forms
+						~~~~~~~~~~~	
+-> HTML form is  used to collect data from user as input.
+
+-> End-user can interact with web pages using forms.
+
+ -> An HTML form contains form elements (input controls).
+
+ -> A Form can have different types of form elements like text fields, checkboxes, radio buttons, submit buttons, and more.
+  
+ Tags related to HTML Forms
+ ~~~~~~~~~~~~~~~~~~~~~~~
+ -> The following tags are involved to develop forms.
+		1. form  -  action, method
+		2. input	-  type, name, id, value
+		3. textarea  -  rows, cols 
+		4. select , option	 -  
+		5. fieldset, legend
+		
+		
+Usage:
+		<form  action="url"  method="get/post">
+			<!-- input controls  -->
+		</form>
+		
+
+1. form tag
+~~~~~~~~~~
+-> Form tag is used to create html forms with elements.
+-> All form elements should be placed within the form tags.
+-> Data will not be submitted to server without form tag.
+
+Usage:		
+	<form action=""  method="">
+				<!-- form elements -->
+	</form>
+						
+Attributes:
+	1.action:	  action attribute specifies web page URL on the server to which file data should be submitted.
+	
+	-> Data will be submitted when the user clicks submit button.					
+
+	Note: If action attribute is not mentioned, data will be submitted to the current page. 	
+	
+2. Method:    method attribute specifies how data to be submitting to server.
+	
+	Usage:			method ="get/post"
+	
+GET Method
+-----------------
+-> Default method is GET.
+-> If you use GET Method, form data will be attached with URL.
+-> It will be visible in the page address bar.
+-> GET method allows limited amount data.
+Eg:
+	Test.jsp?sname=scott&age=25
+	
+Note: GET method is not recommended to send sensitive  data like passwords.
+	
+POST Method
+--------------------
+-> POST method is secured that can be used to send sensitive data.
+-> It will not visible in address bar.
+-> This method does not have size limitations.
+
+
+
+
+
+
+
+
+
+
+
+ --------------
+
+
+
+
+
+
+
+
+2. Input Tag
+~~~~~~~~~~
+-> Input tag is used to create most of the form elements like textbox, password, buttons, etc...
+
+Usage:
+			<input id="t1" 
+						name="t1" 
+						type="text" 
+						value="Hello"   />
+			
+Attributes
+~~~~~~~~
+1. Type : Type attribute specifies what type of input control that you want to create.
+	
+-> It supports following options: 		
+		text, password, checkbox, radio, button, reset, submit, hidden, file, etc..
+				
+2. Id : It is used to refer the tag from client side programming (javascript, jQuery, etc..).
+
+3. Name : It is used to submit to server.  At time of submission browser will submit name and its value.
+
+4. value : It refers the content of the input control.
+-------------------------------------------------------------------
+
+
+
+
+
+3. textarea tag
+~~~~~~~~~~~~
+-> This tag is used to create multiline textbox.
+	Usage:
+		<textarea 	name="t1" 
+								cols="20"
+								rows="10">
+						<!--  Content	 -->
+		</textarea>								
+-------------------------------------------------
+4. select and option tags
+~~~~~~~~~~~~~~~~~~~
+-> select tag is used to create dropdown list and listbox.
+-> It required a child tag called <option> to prepare items.
+Usage:
+		<select id="s1" name="s1">
+				<option>Item1</option>	
+				<option>Item2</option>	
+				....		
+			</select>
+Note: 
+-> By default select tag display as dropdown list,  use size attribute to create listbox.
+Eg:
+	<select name="s1"  size="3">
+		..........
+	</select>
+--------------------------------------------------
+5. Fieldset and legend
+
+-> Fieldset tag is used to draw the border among all the form elements.
+
+-> legend tag is used to provide caption for the group that we prepared using fieldset tag.
+
+Usage:
+		<fieldset>
+			<legend>Caption</legend>
+				<!-- form elements -->			
+				......
+		</fieldset>
+---------------------------------------------------
+
+
+
+
+
+
+ 

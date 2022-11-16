@@ -1,0 +1,7 @@
+Assignment-1
+~~~~~~~~~~~~
+1. What is Validation in Client Side Programming? 
+2. What are the advantages of performing Validations?
+3. What is querystring in web pages?
+4. What is <input type="hidden"  />  ? Why do we use?
+5. Diff. between  <input type="submit"  />   and <button></button>  ?
