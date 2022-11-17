@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map Example</title>
+</head>
+<body>
+
+    <img    src="ImageMap_Task_Technologies.png" 
+            alt="Technologies"
+            usemap="#workmap" 
+    >
+
+    <map name="workmap">
+        <area shape="rect" coords="23,58,146,170" alt="JQuery" href="https://jquery.com/">
+        <area shape="rect" coords="182,49,387,187" alt="Angular" href="https://angularjs.org/">
+        <area shape="rect" coords="399,52,570,176" alt="Bootstrap" href="https://getbootstrap.com/l">
+    </map>
+
+    <script>
+        function getCoords(e){
+            const obj = document.getElementById("x");
+            obj.innerText  = "X = " + e.clientX + ",  Y = " + e.clientY;
+        }	
+    </script>
+</body>
+</html>

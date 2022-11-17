@@ -5,3 +5,13 @@ Assignment-1
 3. What is querystring in web pages?
 4. What is <input type="hidden"  />  ? Why do we use?
 5. Diff. between  <input type="submit"  />   and <button></button>  ?
+
+
+Assignment-2
+~~~~~~~~~~~~
+6.  Create a web page to create credit card payment screen (Refer the image for details).
+7.  Create a web page to develop pizza order page  (Refer the image for details)
+8.  Create Web page to provide navigations to UI Frameworks using ImageMap concept?   (Refer the image for details)
+	a.  https://jquery.com/
+	b. https://angular.io/
+	c.  https://getbootstrap.com/
