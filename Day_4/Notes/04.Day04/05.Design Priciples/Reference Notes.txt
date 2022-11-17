@@ -1,0 +1,28 @@
+Design principles of HTML5
+~~~~~~~~~~~~~~~~~~~~~~~
+	-->  Support of existing content:
+				For example: a document written in a previous version of HTML should be rendered exactly the same and can be processed as HTML5 document.
+	
+	-->  Unbroken Error handling:
+				-->  the way existing HTML is handling broken tags, HTML 5 should handle the errors in the same way.				
+				
+	-->  Design features should be accessible to users with disabilities. 
+				For example: a blind user cannot see an Image. So with the img tag there should be a provision for a non-visual alternative to text.				
+				
+	-->  Media Independent:    Any feature should be independent of the devices and media.
+	
+	--> If there is already a popular technology being used for a particular purpose, use that, rather than creating a new technology for the same purpose.
+	
+	-->  If a particular	, use that, rather than obsoleting that and forcing developers to adhere to a new practice. For example, the (somewhat odd) <br/> tag.
+	
+	-->  Support classical and existing HTML syntax.
+	
+	-->  Ensure that any new feature will adhere to high web security standards.
+	
+	-->  Features should provide simple solutions over complex solutions.
+	
+	-->  Error handling should be be able to address interoperable implementation.
+	
+	-->  There should be more markup, and markup should replace scripts as much as possible.
+	
+	-->  For media usage, external plugins should be minimal.

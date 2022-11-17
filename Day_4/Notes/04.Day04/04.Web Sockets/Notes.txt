@@ -1,0 +1,63 @@
+Web Sockets
+~~~~~~~~~~~
+--> The data can be passed in both directions as “packets”, without breaking the connection and the need of additional HTTP-requests.
+
+--> WebSocket is especially great for services that require continuous data exchange, e.g. online games, real-time trading systems and so on.
+
+--> WebSockets is a next-generation bidirectional communication technology for web applications which operates over a single socket and is exposed via a JavaScript interface in HTML 5 compliant browsers.
+
+--> Once you get a Web Socket connection with the web server, you can send data from browser to server by calling a send() method, and receive data from server to browser by an onmessage event handler.
+
+
+Events:		open, close, message, error
+Methods:  send(),  close()
+
+https://javascript.info/websocket
+https://www.tutorialspoint.com/html5/html5_websocket.htm
+--------------------------------------------------------------------------------------------------
+
+
+Steps to implement
+~~~~~~~~~~~~~~~~~
+1.   Check support of WebSocket		 
+2.   Create WebSocket  object with Server Url		
+3.    Send the message to server  in onopen event		   
+4.    Get the message in onmessage event
+5.    Close the socket connection  in onclose event 
+	
+---------------------------------------------------------------------------------------
+1.   Check support of WebSocket
+		 if ("WebSocket" in window)
+		 
+2.   Create WebSocket  object with Server Url
+		  var wsObj = new WebSocket("wss://javascript.info/article/websocket/demo/hello");
+		  
+3.    Send the message to server  in onopen event:
+			wsObj.onopen = function() {                  
+                  // Web Socket is connected, send data using send()
+                  wsObj.send("Message to send");
+                  alert("Message is sent...");
+               };
+			   
+4.    Get the message in onmessage event:
+
+	 wsObj.onmessage = function (event) { 
+                  var received_msg = event.data;
+                  alert("Message is received..." + received_msg);
+               };
+			   
+5.  Close the socket connection  in onclose event:  
+			ws.onclose = function() {                   
+                  // websocket is closed.
+                  alert("Connection is closed..."); 
+               };
+				
+
+
+
+
+
+
+
+
+
