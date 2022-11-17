@@ -4,3 +4,6 @@ A)  i) The head tag is used for containing meta information such as title, links
 
 2. How to allow only numbers in textbox?
 A) To only allow numbers in a textbox, use attribute "type" and set it's property to "number".
+
+3. What is cookies in web applications? Why do we use?
+A) Cookies are small pieces of information websites store on your computer. Cookies only contain bits of text, not anything else. The text can be a user ID, session ID, or any other text. When you load the page in the future, the page can examine the cookie and automatically hide the element.
