@@ -1,0 +1,6 @@
+1. What is differences between <head> and  <header> tags?
+A)  i) The head tag is used for containing meta information such as title, links, etc. which is not displayed on the page. 
+    ii) The header tag is used within the body of the website and can be used multiple times if required, e.g. to determine the top of an article. It is used for accessibility purposes.
+
+2. How to allow only numbers in textbox?
+A) To only allow numbers in a textbox, use attribute "type" and set it's property to "number".
