@@ -1,0 +1,106 @@
+						Semantic Tag
+						~~~~~~~~~~~
+-> HTML5 introduced new set of semantic tags to control the structure of a web page.
+
+-> Before HTML5, we need depends on the <div> to implement these concept.
+
+-> In HTML5, for every requirement it will provide the separate tag.
+
+Note: -> These tags does not provide any built-in styles. We need to add the required styles.
+
+
+Semantic Tags:
+
+1. Header
+2. Nav
+3. Section
+4. Article
+5. Footer
+
+
+
+
+
+ 
+1. Header
+~~~~~~~~
+-> <header> tag is used to prepare heading section content.
+
+-> It may include images, heading tags, etc..
+
+-> In semantic tags <header> tag will be the first tag.
+
+Note: 
+-> In some web pages, <header> tag is also used to sub tag of <section> tag.
+--------------------------------------------------------
+2. Nav
+~~~~~
+-> <nav> tag is used to create set of hyperlinks as one unit (navigation bar).
+
+-> nav stands for navigation.
+
+-> We can create hyperlinks in different ways based on the requirement.
+
+-> Use regular <a> tags to display links as Horizontal order.
+
+-> Use <UL> tag along with <a> tag to display links as vertical.
+----------------------------------------------------------
+ 
+ 
+---------------------------------------------------------
+3. Section 
+~~~~~~~~~~~
+-> <section> tag is used to organizing your main content in the web page.
+
+-> <section> tag is having another sub tag called <article> to place the content.
+
+-> <section> tag may have more than one article tags.
+ 
+Usage
+~~~~~
+	<section>	 
+		<article> Content </article>
+		<article> Content </article>
+	</section>
+-------------------------------------------------------------
+4. Article
+~~~~~~~
+-> <article> tag actually contains the information.
+
+-> It is used for organizing the information within section.
+
+Usage:
+	<section>
+		<article>
+			// information
+		</article>
+		
+		<article>
+			// information
+		</article>
+	</section>
+---------------------------------------------------------
+5. Footer
+~~~~~~~~
+-> <footer> tag is used to add content that will display bottom of the web page.
+
+-> Generally it includes company address details, copy right information, hyperlinks to social networking web sites etc...
+
+Usage:
+		<footer>
+			<!-- footer content -->
+		</footer>
+-------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,47 @@
+			Semantic Tags in HTML5
+			~~~~~~~~~~~~~~~~~~~~~
+-> HTML5 introduced new set of tags to control the structure/content of a web page.
+
+-> All these tags comes under a special group called "Semantic Tags" that are helps to format the content on web page.
+
+figure & figcaption
+~~~~~~~~~~~~~~~
+-> <figure> tag helps to organizing image and its caption that describe about image.
+
+-> Sub-tags for this tag:
+	1. <img />
+	2. <figcaption />
+	
+-> <img /> tag will helps us to display the image.
+
+-> <figcaption /> tag will helps to provide caption.
+-----------------------------------------------------
+
+mark tag
+~~~~~~~ 
+-> <mark> tag is used to text highlighter with yellow background color.
+
+-> By default it highlight with yellow, if you want, you can change by using style.
+
+Usage:	<mark>text</mark>
+----------------------------------------------------------------
+Details Tag
+~~~~~~~~~
+-> This tag can be used to create an interactive control that the user can open(show) and close(hide) content.
+
+-> We can add any of the html tags inside <details> tag. 
+----------------------------------------------------------
+summary tag
+~~~~~~~~~~~
+-> <summary> tag defines a heading for the <details> tag. 
+
+-> This heading is clickable so that content will be show/hide.
+
+-> It should be the first tag inside the <details> tag.
+-----------------------------------------------------------------
+
+  
+   
+  
+  
+  
