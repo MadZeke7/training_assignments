@@ -1,0 +1,2 @@
+1. How to play youtube videos in HTML?
+A) In the video tag, src should be set to the youtube link thats required.
