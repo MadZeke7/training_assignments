@@ -1,0 +1,6 @@
+1. Why do we use Position in CSS -----
+A) Specifies the type of positioning method used for an element
+
+2. Difference between property values Relative and Absolute in Position property?
+A)  i) absolute - The element is positioned relative to its first positioned (not static) ancestor element
+    ii) relative - The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position
