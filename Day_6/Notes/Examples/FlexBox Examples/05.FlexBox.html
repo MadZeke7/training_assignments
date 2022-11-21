@@ -1,0 +1,84 @@
+<!-- Display text in multi column format using CSS3 -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>  	 
+	.container 
+	{	
+		  margin: 40px auto 0 auto;		
+		  display : flex;
+		  flex-wrap : wrap;
+	}
+
+	.container-item 
+	{
+		  padding: 20px;
+		  border:1px solid gray;
+		  border-radius: 10px;
+		  margin: 5px;		
+		  flex :  30%;
+	}
+	
+	.container-item  p
+	{
+			text-align : justify;
+	}
+	
+	.container-item  h4
+	{
+			color : gray; 
+			text-decoration : underline;
+	}
+	
+	
+	@media only screen and (max-width: 500px)  
+	{ 
+			.container-item 
+			{
+				flex :   50%;
+			}
+	}
+	
+	@media only screen and (max-width: 300px)  
+	{ 
+			.container-item 
+			{
+				flex :   100%;
+			}
+	}
+	
+</style>
+</head>
+<body>
+ <h3 align="center"> Working with FlexBox Layout in CSS3 </h3>
+<hr/>
+
+
+<div class="container">
+
+  <div class="container-item">
+    <h4>Feature 1</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit consectetur nobis molestias! Explicabo deserunt. Consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam placeat numquam omnis sit consectetur.</p>
+  </div>
+  
+    <div class="container-item">
+    <h4>Feature 2</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit consectetur nobis molestias! Explicabo deserunt. Consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam placeat numquam omnis sit consectetur.</p>
+  </div>
+  
+  <div class="container-item">
+    <h4>Feature 3</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit consectetur nobis molestias! Explicabo deserunt. Consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam placeat numquam omnis sit consectetur.</p>
+  </div>
+
+  <div class="container-item">
+    <h4>Feature 4</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit consectetur nobis molestias! Explicabo deserunt. Consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam placeat numquam omnis sit consectetur.</p>
+  </div>
+ 
+ 
+ 
+</div>
+ 
+</body>
+</html>
