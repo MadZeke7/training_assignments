@@ -10,6 +10,7 @@ Assignments-1
 		
 4.  Create  a web page to prepare image gallery. Apply required CSS styles.
 5.  How to hide an element uisng CSS?
+6.  Create web page to apply animation based on the position. Object should move from left to right.
 
  
 
