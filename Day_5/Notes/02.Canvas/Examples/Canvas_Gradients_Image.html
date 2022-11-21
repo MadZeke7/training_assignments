@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3>Canvas Tag Demo</h3>
+<hr/>
+ 
+<img id="img1" width="420" style="display:none;" height="277" src="chakra.png" alt="The Scream" >
+
+<input type="button"  value="Generate Graphics"  onclick="f1()"  />
+ <br><br>
+<canvas id="canvas1" height="300" width="500" style="border:2px solid Blue;">	
+</canvas>
+
+<script>
+function f1() {
+    var c1 = document.getElementById("canvas1");
+    var ctx = c1.getContext("2d");
+	
+	var grd1 = ctx.createLinearGradient(30,20,30,120);
+	grd1.addColorStop(0,"Orange");
+	grd1.addColorStop(0.5,"White");
+	grd1.addColorStop(0.7,"Green");
+		
+	ctx.fillStyle=grd1;
+	ctx.strokeStyle="black";
+	
+	ctx.fillRect(30,20,440,100);
+	ctx.strokeRect(30,20,440, 100);
+	
+	
+	var grd2 = ctx.createLinearGradient(30,140, 470,240);
+	grd2.addColorStop(0,"Orange");
+	grd2.addColorStop(0.5,"White");
+	grd2.addColorStop(0.7,"Green");
+	
+	ctx.fillStyle=grd2;		
+	ctx.fillRect(30,140,440,100);
+	ctx.strokeRect(30,140,440, 100); 	
+	
+    var imgObj = document.getElementById("img1");
+    ctx.drawImage(imgObj, 205, 150, 75, 75);
+		 
+
+	
+}
+</script>
+ 
+
+</body>
+</html>

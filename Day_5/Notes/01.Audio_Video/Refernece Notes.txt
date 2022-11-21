@@ -1,0 +1,41 @@
+			Multi-media tags in HTML5
+			~~~~~~~~~~~~~~~~~~~~~~ 
+-> HTML5 provides separate tags to play video and audio files.
+
+1. <video> tag
+2. <audio> tag
+3. <source> tag
+
+Implementation
+~~~~~~~~~~~~~
+1. <video> tag
+
+<video id="video1">
+	<source  src="filename"
+					type="video/mp4" />	  
+</video>	
+----------------------------------------------------------
+2. <audio> tag
+~~~~~~~~~~~~
+	<audio id="audio1"  controls>
+			<source 	src="filename"	
+						type="audio/mp3" /> 
+	</audio>
+-------------------------------------------------------
+Attributes
+~~~~~~~~
+1. controls  
+2. poster
+3. muted 
+4. loop  
+5. height 
+6. width  
+
+---------------------------------------------------------
+Methods:   Programming related items
+	-> play()	
+	-> pause()	
+---------------------------------------------------------
+
+
+

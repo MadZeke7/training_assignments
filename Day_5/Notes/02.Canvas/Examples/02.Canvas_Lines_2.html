@@ -1,0 +1,42 @@
+<!-- Draw the shapes using canvas tag -->
+<!DOCTYPE html>
+<html  >
+	<head> </head>
+	<body>
+	<h3>Graphics in HTML5 - Using Canvas </h3>
+	<hr/>	 
+		
+		<input type="button"  onclick="fn_drawGraphics()"  value="Draw Graphics" />
+		<br/> <br/>
+		
+ 
+		
+		<canvas  id="canvas1"  style="border:2px  solid  blue"  height="300"  width="300"> 
+		</canvas>
+		
+		<script>
+			function fn_drawGraphics()
+			{
+				var canvasObj =  document.getElementById("canvas1");
+				var  ctx  =  canvasObj.getContext("2d");
+				
+				// Drawing the lines
+				
+				ctx.moveTo(0,0);
+				ctx.lineTo(150, 150);
+				ctx.strokeStyle = "Red";
+				ctx.lineWidth = 2;
+				ctx.stroke(); 
+				
+				ctx.beginPath();
+				ctx.moveTo(150, 150);
+				ctx.lineTo(300, 0);
+				ctx.strokeStyle = "Green";
+				ctx.lineWidth = 2;
+				ctx.stroke(); 				
+			}
+		</script>
+	
+	</body>	
+</html>
+
