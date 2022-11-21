@@ -1,0 +1,32 @@
+<!-- Create a web page to apply animation to image tag by using CSS3 Animation -->
+<!DOCTYPE html>
+<html>
+<head>
+<style> 	
+	@keyframes   Animation1
+	{
+			from {    width :  50px;   height :  50px;  	transform :   rotate(0deg);  }
+			to {    width :  250px;   height :  250px;   transform :   rotate(360deg); }
+	}
+
+	#img1 	
+	{
+		width: 50px;
+		height : 50px;		 
+		padding: 2px;  	
+		
+		animation-name  :  Animation1;
+		animation-duration  :   4s;
+		animation-delay  :   2s;
+		animation-iteration-count : 4;
+		animation-direction  :  alternate;		
+	}
+</style>
+</head>
+<body>
+	<h1> Working with Animations CSS3 </h1>
+	<hr></hr> 
+	<img id="img1"   src="Globe.png" />  
+</body>
+</html>
+
