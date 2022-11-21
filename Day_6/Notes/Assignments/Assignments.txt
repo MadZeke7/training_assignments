@@ -1,0 +1,16 @@
+Assignments-1
+~~~~~~~~~~~~~
+1. Why do you use position property in CSS?
+2. What is the difference between position property values :  absolute / relative;
+3. How to implement following requirements in CSS3 (As per the image):
+		a. Apply space between words
+		b. Apply space between letters
+		c. Apply shadow for each character in the text
+		d. Other requirements as per the image
+		
+4.  Create  a web page to prepare image gallery. Apply required CSS styles.
+5.  How to hide an element uisng CSS?
+
+ 
+
+

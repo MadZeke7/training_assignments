@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <style>
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height:100vh;
+        }
+        
+        div.column{
+            column-count: 2;
+            column-gap: 10px;
+            width:min-content;
+            padding:0;
+        }
+
+        div{
+            margin:0;
+        }
+
+        img{
+            border:4px solid black;
+            padding: 0;
+        }
+
+        .top-left{
+            border-bottom-right-radius: 25px;
+        }
+
+        .top-right{
+            border-bottom-left-radius: 25px;
+        }
+
+        .bottom-left{
+            border-top-right-radius: 25px;
+        }
+
+        .bottom-right{
+            border-top-left-radius: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="column">
+        <div>
+            <img class='top-left' src="https://d3j2s6hdd6a7rg.cloudfront.net/v2/uploads/media/misc/0002/33/thumb_132600_misc_general_500.jpeg" alt="Van Dijk" />
+            <img class='bottom-left' src="https://d3j2s6hdd6a7rg.cloudfront.net/v2/uploads/media/misc/0002/33/thumb_132608_misc_general_500.png" alt="Trent Alexander Arnold" />
+        </div>
+        <div>
+            <img class='top-right' src="https://d3j2s6hdd6a7rg.cloudfront.net/v2/uploads/media/misc/0002/33/thumb_132601_misc_general_500.jpeg" alt="Mohammed Salah" />
+            <img class='bottom-right' src="https://d3j2s6hdd6a7rg.cloudfront.net/v2/uploads/media/misc/0002/33/thumb_132587_misc_general_500.jpeg" alt="Darwin Nunez" />
+        </div>
+    </div>
+</body>
+</html>

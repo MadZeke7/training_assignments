@@ -4,3 +4,17 @@ A) Specifies the type of positioning method used for an element
 2. Difference between property values Relative and Absolute in Position property?
 A)  i) absolute - The element is positioned relative to its first positioned (not static) ancestor element
     ii) relative - The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position
+
+3. How to implement following requirements in CSS3 (As per the image):
+		a. Apply space between words
+		b. Apply space between letters
+		c. Apply shadow for each character in the text
+		d. Other requirements as per the image
+A)  Refer spacing.html
+
+4.  Create  a web page to prepare image gallery. Apply required CSS styles.
+A) Refer image_gallery.html
+
+5.  How to hide an element using CSS?
+A)  i) Use "display:none" to completely get rid of the element from the DOM.
+    ii) Use "visibility:hidden" to make the element take up the same space as before while also hiding it.
