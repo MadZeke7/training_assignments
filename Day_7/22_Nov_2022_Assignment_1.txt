@@ -1,0 +1,2 @@
+1. What is The Viewport?
+A) The viewport is the user's visible area of a web page. The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen.
