@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account Opening</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 2px solid black;
+            padding:2px 10px;
+        }
+
+        input{
+            margin: 8px 0;
+            padding:3px;
+        }
+
+        p{
+            font-weight: 700;
+        }
+
+        input[type="submit"]{
+            color:white;
+            background-color: #1779ba;
+            border: 0;
+            padding:10px;
+        }
+
+        .required{
+            color:red;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Open your Bank Account now!</h1>
+        <hr />
+    </header>
+    <main>
+        <form>
+            <p>Name on Account<span class="required">*</span></p>
+            <input autofocus type="text" id="fname" name="fname" required placeholder="First Name">
+            <input type="text" id="lname" name="lname" placeholder="Middle Name">
+            <input type="email" id="email" name="email" required placeholder="Last Name">
+            <p>Account Number<span class="required">*</span></p>
+            <input type="number" required/>
+            <p>Account Type</p>
+            <div>
+                <input type="radio" name="type" id="current-account" />
+                <span>Current Account</span>
+            </div>
+            <div>
+                <input type="radio" name="type" id="savings-account" />
+                <span>Savings Account</span>
+            </div>
+            
+            <p>Address<span class="required">*</span></p>
+            <textarea placeholder="Please Enter Full Address" required cols="60" rows="3"></textarea>
+            <input type="text" placeholder="City">
+            <input type="text" placeholder="State">
+            <input type="text" placeholder="Pincode" pattern="[0-9]{6}">
+            
+            <p>Occupation</p>
+            <select name="occupation">
+                <option value="Private Sector">Private Sector</option>
+                <option value="Public Sector">Public Sector</option>
+                <option value="Self Employed">Self Employed</option>
+            </select>
+
+            <p>Phone Number<span class="required">*</span></p>
+            <select name="phone-address">
+                <option value="Home">Home</option>
+                <option value="Office">Office</option>
+            </select>
+            <input type="number" required placeholder="Enter Mobile Address">
+            
+            <div>
+                <input type="checkbox"/><span> I agree to the terms & conditions<span class="required">*</span></span>
+            </div>
+
+            <input type="submit" value="Submit">
+    
+        </form>
+    </main>
+</body>
+</html>
