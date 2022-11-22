@@ -1,0 +1,50 @@
+<!-- Create a web page to demonstrate usage of  HTML5 Web Forms -->
+<html>	
+	<head> 
+	</head>	
+	<body>	
+	
+	<h3>Web Forms 2.0 in  HTML5</h3>
+	<hr/>	 
+	
+	<form  id="form1"  
+				action="Register.php" 		
+				autocomplete="off"	
+				method="GET">
+		
+		Student Name  :  
+		<input type="text"  placeholder="Student Name"  autofocus  required   
+					name="t1"   />
+		<br></br>
+		
+		Student Age :   
+	<input type="number" min="20"  max="40" step="2"   name="t2"   />
+		<br></br>
+		
+		E-mail Id  :     
+		<input  type="email"  name="t3"  />
+		<br></br>
+		
+		Pincode   : 
+		<input  type="text"   pattern="\d{6}" name="t4"  />
+		<br></br>
+		
+		Join Date:   <input type="date"  name="t5" />
+			
+		<br/> <br/>
+		<input  type="submit"  value="Create Details"  />	
+		
+		<input  	type="submit"  
+						formaction="Update.php"    
+						formmethod="post"
+						formnovalidate
+						value="Update Details"  />	
+	</form>
+	 
+		Are you agree terms and conditions?
+		<input   form="form1"  type="checkbox" name="ck1" value="Yes" />	
+ </body>
+</html>
+
+
+

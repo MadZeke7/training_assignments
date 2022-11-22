@@ -1,0 +1,43 @@
+<!-- Create a web page to apply div tag background color using input type color -->
+<!DOCTYPE  html>
+<html>
+  <head>	
+	<style>
+		#div1
+		{
+			border:2px solid Blue;
+			text-align : center;
+			border-radius : 15px;
+			padding: 5px;			
+		}
+	</style>	
+  </head>
+  <body>	
+	 <h3 align="center">WebForms 2.0 (HTML5 Forms)</h3>
+	 <hr/>
+	 
+	 Select Color :  <input id="t1" type="color"  /> 
+	 
+	 <input type="button"  value="Apply Color" onclick="f1()"  />
+	 <br/><br></br>
+	 <div id="div1">
+		<h1>Welcome to HTML5 Forms</h1>
+	 </div>
+	 
+	 <script>
+		function   f1()
+		{		
+		var  inputObj = document.getElementById("t1");		
+		var  divObj = document.getElementById("div1");
+		divObj.style.backgroundColor  = inputObj.value;	
+		}
+	 </script>	 
+  </body>
+</html> 
+
+
+
+ 
+
+
+

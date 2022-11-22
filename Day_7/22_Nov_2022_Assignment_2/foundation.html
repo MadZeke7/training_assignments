@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous">
+    <title>Foundation </title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .submit{
+            width:100%;
+        }
+        .button:hover{
+            background-color: white !important;
+            color: #1779ba !important;
+            border: 1px solid #1779ba;
+        }
+
+        main{
+            padding: 10px;
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CRUD Operations</h1>
+    </header>
+    <main>
+        <form>
+            <input placeholder="Employee Number" type="text" />
+            <input placeholder="Employee Name" type="text" />
+            <input placeholder="Employee Role" type="text" />
+        </form>
+        <div id="button-container">
+            <button class="button">Create</button>
+            <button class="button">Read</button>
+            <button class="button success">Update</button>
+            <button class="button alert">Delete</button>
+        </div>
+        <button class="submit button">Submit to Server</button>
+    </main>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!-- Create a web page to update the size of image tag  using input type range control-->
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" /> 
+  </head>
+  <body>	
+	 <h3 align="center">WebForms 2.0 (HTML5 Forms)</h3>
+	 <hr/>
+	 Width :  <input onchange="fn_updateWidth()"  type="range" min="50"  max="500"  id="t1"  />
+	 </br>
+	 Height :  <input onchange="fn_updateHeight()"  type="range" min="50"  max="400"  id="t2"  />
+ 
+	  <br></br>
+	 <img id="img1" width="200" border="2"  height="150" src="Image1.jpg"  />	  
+	 
+	 <script>
+		function   fn_updateWidth()
+		{
+		var  imgObj = document.getElementById("img1");
+		var  inputObj1 = document.getElementById("t1");
+		imgObj.width =  inputObj1.value;		 
+		}
+		
+		function   fn_updateHeight()
+		{
+			var  imgObj = document.getElementById("img1");
+			var  inputObj2 = document.getElementById("t2");
+			imgObj.height =  inputObj2.value;		 
+		}
+	 </script>	 
+  </body>
+</html> 
+
+ 
+
+
+

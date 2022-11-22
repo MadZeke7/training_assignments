@@ -1,0 +1,63 @@
+				Web Forms 2.0 in HTML5
+				~~~~~~~~~~~~~~~~~~~~~
+-> Web Forms 2.0 is extension of html4 forms concept.
+
+-> HTML Forms are used to submit the data to server.
+
+-> Browser will submit the data to server based on the <form> tag only.
+
+-> All html controls should be placed within the form tag only.
+
+->  HTML5 introduced new form elements and attributes to make forms development more easy.
+
+-> It provides pre-defined validations. No need to write client side validation code.
+
+New Controls
+~~~~~~~~~~~ 
+ 1. number  -   min, max, 
+ 2. email
+ 3. color
+ 4. range  -  min, max, step
+ 5. date 
+
+
+New Attributes
+~~~~~~~~~~~~
+1. min and max
+2. required
+3. pattern
+4. autofocus
+5. autocomplete
+6. formaction
+7. step
+8. placeholder
+9. form
+10. formaction
+11. formmethod
+12. formnovalidate
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
