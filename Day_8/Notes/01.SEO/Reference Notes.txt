@@ -1,0 +1,56 @@
+What is SEO?
+
+SEO, or search engine optimization
+SEO is the process of improving the visibility – or rank – of your website in search results for a particular keyword or search query.
+It is made up of a combination of strategies to influence your website’s ranking in search results. 
+SEO requires a multi-faceted approach, targeting different factors to improve your website’s authority, relevance, and navigability, such as on-page optimization, content creation, social media management, link building, and much more. 
+----------------------------------------------------------------------------------
+
+
+1.  Meta Tag
+~~~~~~~~~~~~
+
+
+The <meta> tag defines metadata about an HTML document. 
+Metadata is data (information) about data.
+<meta> tags always go inside the <head> element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings.
+
+Metadata will not be displayed on the page, but is machine parsable.
+Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services.
+
+
+Sample Usae:
+		<head>
+					<meta  name="keywords"  content=".NET , JAVA, PHP, jQuery, Angular" />
+				<meta  name="description"  content="This is the best Software development company in India." />
+				<meta  name="viewport"  content="width=device-width, initial-scale=1.0" /> 
+		</head>
+	
+	
+---------------------------------------------------------------------------------
+
+
+2. Microdata
+
+
+Why do we need Microdata?
+--> Essentially, microdata is one of the code languages designed to provide search-engine spider programs with information about website content. 
+--> Usually, HTML tags tell the browser how to display the information included in the tag
+--> However, the HTML tag doesn't give any information about what that text string means.
+--> It this can make it more difficult for search engines to intelligently display relevant content to a user.
+
+
+What is Microdata?
+--> Microdata is a standardized way to provide additional semantics in your web pages.
+--> Microdata lets you define your own customized elements and start embedding custom properties in your web pages. 
+--> At a high level, microdata consists of a group of name-value pairs.
+--> The groups are called items, and each name-value pair is a property. 
+--> Items and properties are represented by regular elements.
+
+Sample Usage:
+
+	<div itemscope>					
+				<p>My name is <span itemprop="name">Narasimha</span>
+					I live in <span itemprop="city">Hyderabad</span>,
+					<span itemprop="country">India</span></p>		
+	</div>

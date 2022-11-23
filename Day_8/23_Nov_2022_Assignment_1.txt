@@ -1,2 +1,8 @@
 1. Find the details about "list" attribute in html5 forms.
 A) The "list" attribute refers to a "datalist" element that contains pre-defined options for an "input" element. The options are included in the datalist tag and its linked in the input using the id of the datalist tag.
+
+2. What are  Web Crawlers in SEO? 
+A) A program used by search engines that traverses the internet in order to collect and index data.
+
+3. Why do you use backlinks in SEO?
+A) A backlink is a link created when one website links to another. Backlinks are important to SEO since more backlinks to a website are a signal that others support the content.

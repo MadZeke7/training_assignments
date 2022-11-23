@@ -1,0 +1,90 @@
+Web Accessibility
+~~~~~~~~~~~~~~~
+
+Resources:
+		https://www.youtube.com/watch?v=20SHvU2PKsM
+		https://www.w3.org/WAI/
+
+Usage of ARIA Attributes Examples
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1.   <a aria-label="Read More About">Read More</a>
+
+2.    <div  role="alert">You’ve successfully completed the contact form and you will soon receive a confirmation email.</div>
+
+3.  <button id="menu-button-1" aria-haspopup="true" aria-controls="menu-list-1"></button>
+
+4.     <input type="text" id="search" aria-label="Search"  />
+
+5.     <header role="banner">
+
+6.   
+			<div role="contentinfo">
+				This website was built by Georgie.
+			</div>
+
+7.  
+		<a href="aria.html" role="presentation">
+		  <img src="aria-thumbnail.jpg" role="presentation" alt="Use ARIA effectively">
+		</a>
+8.  
+				<span role="checkbox" 
+					  aria-checked="true"
+					  tabindex="0"
+					  id="simulatedcheckbox">
+				</span>
+
+9.  
+	<figure aria-labelledby="operahouse_1" role="group">
+		<img src="operahousesteps.jpg" alt="The Sydney Opera House">
+		<figcaption id="operahouse_1">We saw the opera <cite>Barber of Seville</cite> here!</figcaption>
+	</figure>
+
+
+10.  
+	<img src="bobby.jpg" alt="My dog Bobby playing fetch in the park">
+
+11.  
+			<video … aria-label="The General">
+			   …
+			</video>
+
+12.  	<audio aria-label='Audio aria label'>
+            <source type='audio/mp3' src='harpsicord.mp3'></source>
+        </audio>
+		
+		
+13.  	<div  role="figure">
+					<img   />
+					<img  />
+					.....
+			</div>
+			
+14.    	
+			<div  role="Tables"  class="row">
+					<div  class="col"></div>
+					<div  class="col"></div>
+					<div  class="col"></div>
+					<div  class="col"></div>
+			</div>
+			
+			
+15.  	<div  role="Grid"  class="row">
+					<div  class="col"></div>
+					<div  class="col"></div>
+					<div  class="col"></div>
+					
+					<div  class="col"></div>
+					<div  class="col"></div>
+					<div  class="col"></div>
+			</div>
+			
+			
+			
+Further References:
+
+https://www.youtube.com/watch?v=20SHvU2PKsM&t=13s
+https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles
+https://www.w3.org/TR/html-aria/
+https://accessibilityinsights.io/info-examples/web/aria-roles/
+https://www.codeinwp.com/blog/wai-aria-roles/
+
