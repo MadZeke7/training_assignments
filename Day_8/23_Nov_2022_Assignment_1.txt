@@ -1,0 +1,2 @@
+1. Find the details about "list" attribute in html5 forms.
+A) The "list" attribute refers to a "datalist" element that contains pre-defined options for an "input" element. The options are included in the datalist tag and its linked in the input using the id of the datalist tag.
