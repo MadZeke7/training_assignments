@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo of Microdata</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        
+        header{
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #C8102E;
+            color:white;
+            padding: 10px;
+        }
+        header a{
+            color:white;
+        }
+        img{
+            height:60px;
+        }
+
+        section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding:40px 100px; 
+        }
+
+        section h2{
+            color: #C8102E;
+        }
+        section div{
+            display: flex;
+        }
+        section div img{
+            height: 400px;
+        }
+
+        span{
+            font-weight: 700;
+            color: grey;
+            font-size: larger;
+        }
+
+        #recipe{
+            padding: 0px 15px;
+            margin:0;
+        }
+
+        #recipe p{
+            font-size: 15px;
+        }
+
+        p{
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <header itemscope>
+        <img src="https://www.liverpoolfc.com/liverpoolfc_crest.png" alt="Liverpool" itemprop="logo"/>
+        <h1>Liverpool</h1>
+        <a href="https://www.liverpoolfc.com" itemprop="url">About</a>
+    </header>
+
+    <section itemscope>
+        <h2 itemprop="person">Jurgen Klopp</h2>
+        <div itemscope>
+            <article>
+                <p>->My favourite place to have fun is <span itemprop="place">Anfield</span></p> 
+                <p>->My favourite movie is <span itemprop="movie">The Dark Knight</span></p>
+                <p>->My favourite food to eat is Turkey Noodle Soup.The recipe is as follows:</p>
+                <div id="recipe">
+                    <p>Step 1<br />
+                        In a large pot over medium heat, heat oil. Add carrots, celery, onion, and leek and cook until soft, 5 minutes. Season with salt and pepper. Add garlic and cook until fragrant, 1 minute more.<br /> 
+                        Step 2<br />
+                        Add broth, water, thyme, rosemary, bay leaf, oregano, and pinch red pepper flakes. Bring to a boil, then add egg noodles. Cover and cook until pasta is cooked through, 7 minutes. Discard thyme, rosemary, and bay leaf.<br /> 
+                        Step 3<br />
+                        Add turkey and simmer until warmed through, 5 minutes. Season with more salt and pepper.<br />
+                    </p>
+                </div>
+                <p>->My favourite restaurant is <span itemprop="restaurant">The Boot Room Sports Cafe
+                </span></p>
+
+            </article>
+            <img src="https://d3j2s6hdd6a7rg.cloudfront.net/v2/uploads/media/default/0002/08/99337a79f8a5e53942f848f9eb899cb159ce0da5.jpeg" alt="Klopp"/>
+        </div>
+    </section>
+
+</body>
+</html>
