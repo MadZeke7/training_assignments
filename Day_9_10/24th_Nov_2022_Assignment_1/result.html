@@ -20,21 +20,29 @@
 <body>
     <h1>Welcome <span id="name">Guest</span></h1>
     <h3 id="date"></h3>
-    <script>
-        // console.log('bruh');
+    <script>        
         const object = JSON.parse(localStorage.getItem("Object"));
 
-        //Color done
+        //defined DOM variables
         const body = document.body;
+        const para = document.getElementById('name');
+        const dateDOM = document.getElementById('date');
+
+        // if opened directly
+        if(object==null){
+            body.style.backgroundColor = "black";
+            dateDOM.textContent = "Please open the formdata.html file first to access localstorage here";
+        }
+
+        //Color done
         body.style.backgroundColor = object.color;
 
         //Name
-        const para = document.getElementById('name');
+        
         if(object.name!="")
             para.textContent = object.name
 
         //Date
-        const dateDOM = document.getElementById('date');
         dateDOM.textContent = "Thanks for joining us on " + object.jdate;
 
     </script>
