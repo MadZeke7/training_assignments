@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body{
+            color:white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height:100vh;     
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome <span id="name">Guest</span></h1>
+    <h3 id="date"></h3>
+    <script>
+        // console.log('bruh');
+        const object = JSON.parse(localStorage.getItem("Object"));
+
+        //Color done
+        const body = document.body;
+        body.style.backgroundColor = object.color;
+
+        //Name
+        const para = document.getElementById('name');
+        if(object.name!="")
+            para.textContent = object.name
+
+        //Date
+        const dateDOM = document.getElementById('date');
+        dateDOM.textContent = "Thanks for joining us on " + object.jdate;
+
+    </script>
+</body>
+</html>
