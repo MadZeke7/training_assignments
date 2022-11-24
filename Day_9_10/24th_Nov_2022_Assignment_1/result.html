@@ -33,17 +33,18 @@
             body.style.backgroundColor = "black";
             dateDOM.textContent = "Please open the formdata.html file first to access localstorage here";
         }
+        else{
+            //Color done
+            body.style.backgroundColor = object.color;
 
-        //Color done
-        body.style.backgroundColor = object.color;
+            //Name
+            
+            if(object.name!="")
+                para.textContent = object.name
 
-        //Name
-        
-        if(object.name!="")
-            para.textContent = object.name
-
-        //Date
-        dateDOM.textContent = "Thanks for joining us on " + object.jdate;
+            //Date
+            dateDOM.textContent = "Thanks for joining us on " + object.jdate;
+        }
 
     </script>
 </body>
