@@ -1,0 +1,43 @@
+<html>
+	<head></head>
+	<body>
+		<h3>Working with JSON</h3>
+		<hr/> 
+		
+		
+		<input type="button"   value="Stringify"   onclick="fn_convertObjToJSON()"   />  
+		<input type="button"   value="Parsing"   onclick="fn_convertJSONToObj()"   />  
+		
+		<script> 
+				function  fn_convertObjToJSON()
+				{
+					 var  studentsArray =  [
+							{sid :  1025,  sname  : "Scott", age : 25}, 					 
+							{sid :  1026,  sname  : "Sam", age : 26}, 					 
+							{sid :  1027,  sname  : "Sandy", age : 27}, 					 
+							{sid :  1028,  sname  : "Sriman", age : 28}, 					 
+							{sid :  1029,  sname  : "Sowmya", age : 29}			 
+					 ];
+					 
+					 console.log( studentsArray );
+					 
+					 var  str  =  JSON.stringify(studentsArray);
+					 console.log(str);
+					 
+				}		
+				
+				function  fn_convertJSONToObj()				
+				{ 
+					 	 var str  =  '[{"sid":1025,"sname":"Scott","age":25},{"sid":1026,"sname":"Sam","age":26},{"sid":1027,"sname":"Sandy","age":27},{"sid":1028,"sname":"Sriman","age":28},{"sid":1029,"sname":"Sowmya","age":29}]';
+								
+						console.log(str);
+						
+						var  studentsArray =  JSON.parse(str);
+						console.log(studentsArray);
+						
+				} 
+		</script>
+	
+	</body>
+
+</html>

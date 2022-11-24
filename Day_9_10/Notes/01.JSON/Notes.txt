@@ -1,0 +1,14 @@
+JavaScript Object
+~~~~~~~~~~~~~~
+
+var  obj  =  {};
+var  obj  =  {sid :  1025,  sname  : "Scott", age : 25};
+
+obj.sname 		----	  get / set
+
+obj.sname  = "Smith";
+alert(obj.sname);
+
+
+1.  alert();
+2.  console.log();

@@ -1,0 +1,127 @@
+JSON
+~~~~~
+-> JSON stands for Java Script Object Notation.
+
+-> JSON concept is used to exchange the data between client(front-end apps.) to web server (web api / web services).
+
+-> It is a object representation technique in JavaScript.
+
+-> At the time of introducing AJAX (2005), every one uses XML to transfer the data from server. 
+
+-> If we use XML, we need to serialize/de-serialize the XML data into objects.
+
+-> But JSON can access directly in client code (AJAX programming).
+
+-> JSON objects are light weight objects.
+
+Advantages of JSON over XML
+~~~~~~~~~~~~~~~~~~~~~~~~~
+1. Easy to represent, access and read.
+2. Light weight objects.
+3. No need to perform serialize/de-serialize.
+4. All JavaScript libraries supports.
+5. Easy to map programming objects to JS objects due its property representation.
+---------------------------------------------------------
+
+
+XML Format :
+~~~~~~~~~~~~
+	<Student>
+		<sid>1025</sid>
+		<sname>Scott</sname>
+	</Student>
+
+
+
+Examples of JSON Object
+~~~~~~~~~~~~~~~~~~~~~~
+Single Object:
+	var stdObj  =  {"sid":1025, "sname": "Scott"};
+
+Multiple Objects	
+	[ 	
+		{"sid":1025, "sname": "Scott"}, 
+		{"sid":1026, "sname": "Smith"},
+		{"sid":1026, "sname": "Smith"},
+		{"sid":1026, "sname": "Smith"},
+		{"sid":1026, "sname": "Smith"},
+    ]
+------------------------------------------------------------------------------
+
+// JavaScript Object
+var  stdObj  =  {sid :  1025,  sname  : "Scott", age : 25};
+
+// JSON Object   
+ var stdObj  =  {"sid":1025, "sname": "Scott", "age":25 };
+
+ 
+
+
+
+----------------------------------------------------------------
+ 
+Rules for Creating JSON Data
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1. Object properties are represented in  name:value pairs.
+2. Each property is separated by comma.
+3. Property Name should be in double quotations. String values should be in double quotations.
+4. Curly braces hold objects.
+5. Square brackets hold arrays.
+----------------------------------------------------
+
+Example of JSON Objects
+~~~~~~~~~~~~~~~~~~~~~
+Eg-1:	Single Object
+
+var str  = '{"deptno":10, "dname":"Accounts"}';
+
+Eg-2:	Array of  Objects
+
+var str  = '[    
+  {"deptno":10,"dname":"Accounts"},
+  {"deptno":20, "dname":"Sales"}
+]' ;
+----------------------------------------------------
+
+ 
+
+
+Converting JS objects into JSON String
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-> If you want to send data to a web server, the data has to be a string.
+
+-> JavaScript provides a method called "JSON.stringify()" in order to  convert a JavaScript object into a JSON string.
+
+Usage:
+~~~~~~
+	var obj = {sid : 1025, sname : "Scott"};
+	var str  = JSON.stringify(obj);
+			alert(str);
+
+
+Converting JSON String into JavaScript Object
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-> If you want to process the data (json string format)that came from server, we need to convert into JavaScript objects.
+
+-> JavaScript provides a method called "JSON.parse()" in order to  convert a JSON string into JavaScript object.
+
+Usage:
+~~~~~~
+		  var str   = '{"sid":1025,"sname":"Scott"}';
+		  
+		  var obj = JSON.parse(str);
+		  
+		  alert(obj.sid);
+		  alert(obj.sname);
+-----------------------------------------------------------------------------------------------
+
+ 
+ Reference Urls:
+ 
+ 
+ https://reqres.in/api/users
+ https://www.w3schools.com/angular/customers.php
+ https://jsonformatter.org/
+ 
+ 
+ 

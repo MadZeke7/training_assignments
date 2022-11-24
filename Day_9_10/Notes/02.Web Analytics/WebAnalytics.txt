@@ -1,0 +1,44 @@
+Important Terminology
+~~~~~~~~~~~~~~~~~~~~
+
+ Benchmarking − A service that gives a view of how your website is performing in contrast to others.
+
+Bounce Rate − Number of times a user quits without exploring your webpages.
+
+Click − An action of clicking on your webpages.
+
+Conversion − Conversion takes place when a goal is completed, e.g., purchase, registration, downloads, etc.
+
+Direct Traffic − Traffic coming directly on your website by clicking on your website’s link or typing the URL of your website in the address bar.
+
+Filter − A guideline that exclude/include specific data from reports.
+
+Funnels − Steps visitors take to finally complete a goal.
+
+Goal − A metric that defines the success rate, e.g., sale or sign-up.
+
+Goal Conversion Rate − Percentage of visits on every goal achieved.
+
+Impression − The display of your website on the Internet.
+
+Keywords − Search queries that visitors use to find your website.
+
+Landing Page − The first page from where a visitor enters your website.
+
+New Visitor − The visitor who is coming to your website for the first time.
+
+Organic Traffic − Traffic for which you need not pay. It comes naturally, e.g., traffic from search engines.
+
+Paid Traffic − Traffic for which you need to pay, e.g., Google AdWords.
+
+Page View − Number of times a page is viewed.
+
+Returning Visitor − The visitors who have already visited your page earlier. Returning visitors are an asset for any website.
+
+Time on Site − The average time a visitor spends accessing your site in a time.
+
+Tracking Code − A small snippet of code inserted into the body of HTML page. This code captures the information about visits to a page.
+
+Traffic − Flow of visitors to your website.
+
+Traffic Sources − The source from where traffic originates.

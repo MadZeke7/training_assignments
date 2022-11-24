@@ -1,0 +1,24 @@
+Google Analytics
+~~~~~~~~~~~~~~
+
+-->  Google Analytics is a web analytics platform that monitors website traffic, behaviors and conversions. 
+
+--> The platform tracks 
+		--> page views, unique visitors, bounce rates, 
+		--> referral Uniform Resource Locators, 
+		--> average time on-site, page abandonment, 
+		--> new vs. returning visitors and demographic data.
+
+------------------------------------------------------------------------------------------------
+
+Firebase Analytics
+~~~~~~~~~~~~~~~~
+
+-->  Google Analytics for Firebase provides free, unlimited reporting on up to 500 distinct events. 
+-->  The SDK automatically captures certain key events and user properties, and you can define your own custom events to measure the things that uniquely matter to your business. 
+-->  Some Firebase features are indeed only available for iOS and Android. If you need those features on web, you'll indeed have to look elsewhere. In that case I'd also recommend that you file a feature request.
+
+
+-->  Firebase, we see that they have the same data model — one that depicts user interactions as events. 
+ 
+-->  That's why both platforms also share the same implementation process — the only difference between Firebase Analytics and Google Analytics in this regard lies in where you first set up your Android and iOS data streams.
