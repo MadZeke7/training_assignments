@@ -5,4 +5,4 @@ A) To do so in javascript, we need to target the dom element. Then element.class
 A) CDN stands for Content Delivery Network. They are a group of servers that work together to provide fast and safe delivery of Internet content. 
 
 3. How to align justify using Bootstrap?
-A)  .text-justify : The text can justified by using the . text-justify class.
+A)  Bootstrap doesn't provide utility classes for justified text. They reason it with a statement saying "word-spacing more random" and therefore harder to read.
