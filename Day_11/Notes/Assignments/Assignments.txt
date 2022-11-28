@@ -1,0 +1,6 @@
+1. How to add or remove css classes to html elements using JavaScript?
+2. What is CDN? What are the advantages of using CDN urls?
+3:  How to align justify using Bootstrap?
+4.  [Practical Assignment]
+	 Create a web page to change the border style based on the selected option in drop-down. Use Image classes of Bootstrap to implement this (Refer the Image)
+ 
