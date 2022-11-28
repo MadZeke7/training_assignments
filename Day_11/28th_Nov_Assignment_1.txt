@@ -3,3 +3,6 @@ A) To do so in javascript, we need to target the dom element. Then element.class
 
 2. What is CDN? What are the advantages of using CDN?
 A) CDN stands for Content Delivery Network. They are a group of servers that work together to provide fast and safe delivery of Internet content. 
+
+3. How to align justify using Bootstrap?
+A)  .text-justify : The text can justified by using the . text-justify class.
