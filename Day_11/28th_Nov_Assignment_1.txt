@@ -1,2 +1,5 @@
 1. How to add or remove CSS classes to html elements using JavaScript?
 A) To do so in javascript, we need to target the dom element. Then element.classList.add("class") for adding the class and element.classList.remove("class") for removing the class.
+
+2. What is CDN? What are the advantages of using CDN?
+A) CDN stands for Content Delivery Network. They are a group of servers that work together to provide fast and safe delivery of Internet content. 
