@@ -3,3 +3,6 @@ A) Clearfix class is used to automatically clear of fix its elements. Usually us
 
 2. How to hide the elements using Bootstrap?
 A) Use class "d-none" to completely hide elements in Bootstrap 5. "invisible" class can also be used which hides the elements but keeping them in the DOM for screen readers. 
+
+3. What is spinner class? How to create spinners in bootstrap?
+A) They indicate the loading state of a component or page. It is made using only html, css and no JavaScript. Use class "spinner-border" to get the spinner.
