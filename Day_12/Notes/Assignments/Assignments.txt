@@ -1,0 +1,11 @@
+1.  What is clearfix class in bootstrap? Why do we use it?
+2.  How to hide the html tags using Bootstrap?
+3. What is spinner? How to create spinner using Boostrap?
+
+4.  Create a web page to display the given content using Boostrap styles. (Refer the image)
+		a.   Use Progress bar concept of bootstrap
+		b.   Add some important instructions to employees using alert option. 		
+					---  You can choose some instructions (2 to 3 points)					
+		c.  Try to use bootstrap icons for arrows (Google It / Take help of bootstrap website)
+-------------------------------------------------------------------------------------------------------------------------- 
+ 
