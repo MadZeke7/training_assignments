@@ -1,0 +1,5 @@
+1. What is Clearfix class? Why do we use?
+A) Clearfix class is used to automatically clear of fix its elements. Usually used in float layout.
+
+2. How to hide the elements using Bootstrap?
+A) Use class "d-none" to completely hide elements in Bootstrap 5. "invisible" class can also be used which hides the elements but keeping them in the DOM for screen readers. 
