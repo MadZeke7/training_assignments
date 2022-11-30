@@ -1,0 +1,29 @@
+@use  'header';
+
+.box
+{
+    border: 1px solid darkgray;
+    padding : 10px;
+    margin : 5px;   
+    text-align: right;
+}
+
+$baseWidth: 10px;
+
+@for $i from 1 to 7
+{
+    .box-s#{$i}
+    {
+        width :  $baseWidth * $i * 5; 
+
+        @if( $i % 2 == 0)
+        {
+            background-color: lime;
+        }
+        @else
+        {
+            background-color: aqua;
+        }
+        
+    }
+}

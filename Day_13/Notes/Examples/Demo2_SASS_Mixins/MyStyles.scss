@@ -1,0 +1,24 @@
+@mixin theme($themeColor: DarkBlue) 
+{
+    color: $themeColor;
+    box-shadow: 2px 2px 5px  $themeColor;
+    border: 2px solid $themeColor;   
+    padding : 10px;
+    margin : 5px;
+}
+
+.primary
+{
+    @include theme;
+}
+
+.success
+{
+    @include theme($themeColor:Green);
+}
+
+.danger
+{
+    @include theme($themeColor:red);
+}
+ 

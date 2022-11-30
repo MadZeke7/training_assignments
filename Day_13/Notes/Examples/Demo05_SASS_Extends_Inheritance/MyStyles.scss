@@ -1,0 +1,38 @@
+.header-box
+{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    background-color: skyblue;     
+    border: 1px solid black;
+}
+ 
+
+.message {  
+    border: 1px solid #ccc;  
+    padding: 10px;  
+    color: black;  
+    border-radius: 5px;
+}  
+
+
+.success
+{
+    @extend  .message;
+    background-color: rgb(186, 243, 186);
+}
+
+.danger
+{
+    @extend  .message;
+    background-color: rgb(238, 158, 140);
+}
+  
+.warning
+{
+    @extend  .message;
+    background-color: rgb(247, 244, 149);
+}
+  
+  

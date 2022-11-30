@@ -1,0 +1,32 @@
+.header-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-color: skyblue;
+  border: 1px solid black;
+}
+
+.primary {
+  background: DarkBlue;
+  box-shadow: 2px 2px 5px DarkBlue;
+  color: #fff;
+  padding: 10px;
+  margin: 5px;
+}
+
+.success {
+  background: Green;
+  box-shadow: 2px 2px 5px Green;
+  color: #fff;
+  padding: 10px;
+  margin: 5px;
+}
+
+.danger {
+  background: red;
+  box-shadow: 2px 2px 5px red;
+  color: #fff;
+  padding: 10px;
+  margin: 5px;
+}/*# sourceMappingURL=MyStyles.css.map */

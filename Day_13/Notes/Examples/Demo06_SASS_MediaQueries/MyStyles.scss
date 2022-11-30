@@ -1,0 +1,39 @@
+$small: 300px;
+$medium: 500px;
+$large: 800px;
+
+
+
+.header-box
+{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    background-color: skyblue;     
+    border: 1px solid black;
+}
+ 
+.card {   
+    border: 2px solid Green;
+    padding: 5px;			
+    text-align: justify; 
+    column-gap :  50px;
+	column-rule: 5px double Green; 
+
+    @media screen and (min-width: $small) {
+            column-count: 1;
+            background-color: lightblue;
+    }
+
+    @media screen and (min-width: $medium) {
+        column-count: 2;
+        background-color: lightyellow;
+    }
+
+    @media screen and (min-width: $large) {
+        column-count: 3;
+        background-color: lightpink;
+    }       
+
+}

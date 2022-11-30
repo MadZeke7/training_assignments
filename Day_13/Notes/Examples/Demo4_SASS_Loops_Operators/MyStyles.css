@@ -1,0 +1,45 @@
+.header-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background-color: skyblue;
+  border: 1px solid black;
+}
+
+.box {
+  border: 1px solid darkgray;
+  padding: 10px;
+  margin: 5px;
+  text-align: right;
+}
+
+.box-s1 {
+  width: 50px;
+  background-color: aqua;
+}
+
+.box-s2 {
+  width: 100px;
+  background-color: lime;
+}
+
+.box-s3 {
+  width: 150px;
+  background-color: aqua;
+}
+
+.box-s4 {
+  width: 200px;
+  background-color: lime;
+}
+
+.box-s5 {
+  width: 250px;
+  background-color: aqua;
+}
+
+.box-s6 {
+  width: 300px;
+  background-color: lime;
+}/*# sourceMappingURL=MyStyles.css.map */

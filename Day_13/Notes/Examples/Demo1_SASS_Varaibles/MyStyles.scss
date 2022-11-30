@@ -1,0 +1,10 @@
+$primary-color :  deeppink;
+
+div
+{
+    color :   $primary-color;
+    border: 1px solid $primary-color;
+    box-shadow: 2px 2px 2px $primary-color;
+    margin: 5px;
+    text-align: center;
+}

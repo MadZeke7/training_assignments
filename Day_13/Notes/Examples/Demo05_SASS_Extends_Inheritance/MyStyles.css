@@ -1,0 +1,27 @@
+.header-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background-color: skyblue;
+  border: 1px solid black;
+}
+
+.message, .warning, .danger, .success {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: black;
+  border-radius: 5px;
+}
+
+.success {
+  background-color: rgb(186, 243, 186);
+}
+
+.danger {
+  background-color: rgb(238, 158, 140);
+}
+
+.warning {
+  background-color: rgb(247, 244, 149);
+}/*# sourceMappingURL=MyStyles.css.map */
