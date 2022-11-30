@@ -1,0 +1,11 @@
+@for $i from 1 through 6 {
+    .ts-#{$i} {
+        font-size: $i + 2rem;
+        @if ($i <= 3){
+            color:red;
+        }
+        @else{
+            color:green;
+        }
+    }    
+}
