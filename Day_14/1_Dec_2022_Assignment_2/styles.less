@@ -1,0 +1,62 @@
+@import "header.less";
+
+// Question 1
+
+body{
+    font-family: 'Arial', sans-serif;
+    img{
+        height: 300px;
+    }
+}
+
+#links{
+    margin-bottom: 40px;
+    font-size: 1.3rem;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    &:hover{
+        font-weight: 700;
+        text-decoration: underline;
+    }   
+}
+
+// Question 3
+
+.theme (@themeColor){
+    border: 2px solid @themeColor;  
+    color : @themeColor;
+    padding: 10px;
+}
+  
+.sizesequal{
+    width: 200px;
+    height:200px;
+}
+
+.circle{
+    border-radius: 50%;
+    .theme (red);
+    .sizesequal;
+}
+
+.square{
+    .theme(blue);
+    .sizesequal;
+}
+
+// Question 4
+
+.fancybutton{
+    background-color: black;
+    color:white;
+    font-family:'Lucida Sans', Geneva, Verdana, sans-serif;
+    border-radius: 40px;
+}
+
+.button{
+    .fancybutton;
+    padding:10px;
+}

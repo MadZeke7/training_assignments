@@ -1,0 +1,13 @@
+h1 {
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgba(255, 10, 100, 0.5);
+  background-color: #898fb0;
+  text-align: center;
+  padding: 10px;
+}
+p {
+  color: #3554ed;
+  background-color: rgba(255, 10, 100, 0.5);
+  padding: 10px;
+}
