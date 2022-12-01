@@ -1,0 +1,17 @@
+1.  What is container class in Bootstrap? When do we use container-fluid class?
+
+2.  What is CDN?  What are the advantages of CDN Urls?
+ 
+3. Create a web page for the following requirements and apply the styles using LESS concepts
+
+a.   All hyperlinks are in black color without underline.  
+	   On mouseover :  underline, apply bold font
+	  
+b.   Create some mixin functions to apply styles to images based on the given input value.  Eg :  Circle, Square
+
+c.   Define some common styles for headings and paragraphs in separate LESS file and import main LESS file. 
+
+d.  Create a class to define basic styles for buttons.  Create additional class named "fancybutton"  and apply styles as per the image. 
+
+
+ 

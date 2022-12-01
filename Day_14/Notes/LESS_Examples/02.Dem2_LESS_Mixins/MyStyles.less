@@ -1,0 +1,86 @@
+// This is main Style File
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    background-color: lightyellow;
+    border: 2px solid darkgray;
+    border-radius: 5px;
+  }
+  
+// Mixin without parameters
+.shadowFn()
+{
+    box-shadow+: 5px 5px blue;   
+}
+
+.fancy-box
+{
+    .shadowFn();
+   box-shadow+: 10px 10px red;   
+   box-shadow+: 15px 15px green;   
+   margin-left : 30px;
+   margin-right : 30px;
+}
+
+// Mixin with parameters
+.theme (@themeColor)
+{
+    border: 2px solid @themeColor;  
+    color : @themeColor;
+    padding: 10px;    
+    border-radius: 5px;   
+    border-left-width: 20px;
+  }
+
+  
+.successBox
+{    
+    .theme(Green)
+}
+
+ 
+
+.warningBox
+{    
+    .theme(Red)
+}
+
+.infoBox
+{    
+    .theme(Blue)
+}
+
+
+
+
+/*
+
+.message {  
+    border: 1px solid #ccc;  
+    padding: 10px;  
+    color: black;  
+    border-radius: 5px;
+}  
+
+
+.success
+{
+    &:extend(.message);
+    background-color: rgb(186, 243, 186);
+}
+
+.danger
+{
+    &:extend(.message);
+    background-color: rgb(238, 158, 140);
+}
+  
+.warning
+{
+   &:extend(.message);
+    background-color: rgb(247, 244, 149);
+}
+
+*/

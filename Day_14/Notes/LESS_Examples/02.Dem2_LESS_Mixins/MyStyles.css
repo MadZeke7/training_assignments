@@ -1,0 +1,64 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background-color: lightyellow;
+  border: 2px solid darkgray;
+  border-radius: 5px;
+}
+.fancy-box {
+  box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.successBox {
+  border: 2px solid Green;
+  color: Green;
+  padding: 10px;
+  border-radius: 5px;
+  border-left-width: 20px;
+}
+.warningBox {
+  border: 2px solid Red;
+  color: Red;
+  padding: 10px;
+  border-radius: 5px;
+  border-left-width: 20px;
+}
+.infoBox {
+  border: 2px solid Blue;
+  color: Blue;
+  padding: 10px;
+  border-radius: 5px;
+  border-left-width: 20px;
+}
+/*
+
+.message {  
+    border: 1px solid #ccc;  
+    padding: 10px;  
+    color: black;  
+    border-radius: 5px;
+}  
+
+
+.success
+{
+    &:extend(.message);
+    background-color: rgb(186, 243, 186);
+}
+
+.danger
+{
+    &:extend(.message);
+    background-color: rgb(238, 158, 140);
+}
+  
+.warning
+{
+   &:extend(.message);
+    background-color: rgb(247, 244, 149);
+}
+
+*/

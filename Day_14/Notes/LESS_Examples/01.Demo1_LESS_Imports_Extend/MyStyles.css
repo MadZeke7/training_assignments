@@ -1,0 +1,31 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background-color: deeppink;
+  border: 2px solid darkgray;
+  border-radius: 5px;
+  color: white;
+}
+.message,
+.success,
+.danger,
+.warning {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: black;
+  border-radius: 10px;
+}
+.success {
+  background-color: #baf3ba;
+  border-left: 15px solid green;
+}
+.danger {
+  background-color: #ee9e8c;
+  border-left: 15px solid red;
+}
+.warning {
+  background-color: #f7f495;
+  border-left: 15px solid #464409;
+}

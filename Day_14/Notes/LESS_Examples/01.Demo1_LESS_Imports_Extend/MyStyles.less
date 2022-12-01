@@ -1,0 +1,30 @@
+// This is main Style File
+@import 'Header';
+
+.message {  
+    border: 1px solid #ccc;  
+    padding: 10px;  
+    color: black;  
+    border-radius: 10px;
+}        
+
+.success
+{
+    &:extend(.message);
+    background-color: rgb(186, 243, 186);
+    border-left: 15px solid green;
+}
+
+.danger
+{
+    &:extend(.message);
+    background-color: rgb(238, 158, 140);
+    border-left: 15px solid red;
+}
+  
+.warning
+{
+   &:extend(.message);
+    background-color: rgb(247, 244, 149);
+    border-left: 15px solid rgb(70, 68, 9);
+}

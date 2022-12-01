@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background-color: lightyellow;
+  border: 2px solid darkgray;
+  border-radius: 5px;
+}
+a {
+  color: deeppink;
+  text-decoration: none;
+}
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+.parent {
+  border: 1px solid gray;
+}
+.parent .child {
+  color: blue;
+}
