@@ -1,0 +1,9 @@
+1. What is container class in Bootstrap? When do we use container-fluid class?
+A) Containers are the most basic layout element in Bootstrap and are required when using our default grid system. Containers are used to contain, pad, and (sometimes) center the content within them. While containers can be nested, most layouts do not require a nested container. ".container-fluid" is used for a full width container, spanning the entire width of the viewport.
+Example: 
+<div class="container-fluid">
+    ...
+</div>
+
+2. What is CDN?  What are the advantages of CDN Urls?
+A) CDN stands for Content Delivery Network. They are a group of servers that work together to provide fast and safe delivery of Internet content. 
