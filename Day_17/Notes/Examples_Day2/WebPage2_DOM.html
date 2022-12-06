@@ -1,0 +1,26 @@
+<html>
+	<head></head>
+	<body>
+		<h3>JavaScript Programming -- DOM </h3>
+		<hr/>
+		
+		
+		User Name  :  <input type="text"  id="t1"   />
+		<br/>
+		<br/>
+		<input  type="button"  value="Get Message"  onclick="fn_getMessage()"  />
+		<p  id="p1"></p>
+		 		
+		<script>		
+				function  fn_getMessage()
+				{
+					var  paraObj  =  document.getElementById("p1");		
+					var  txtObj  =  document.getElementById("t1");		
+					
+					paraObj.innerHTML = "Welcome to " +  txtObj.value; 
+					
+				}		
+		</script>
+		 
+	</body>
+</html>

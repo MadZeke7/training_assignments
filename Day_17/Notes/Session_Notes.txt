@@ -1,0 +1,59 @@
+Day-2   -- JavaScript Programming
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Confirm Box
+~~~~~~~~~~~
+
+
+Confirm()
+
+	--->   confirm()  method returns the value ---  true / false	
+	--->		true  ---   User selected "OK"  button
+	--->		false  ---   User selected "Cancel"  button
+
+ 
+ 
+ 
+
+var  flag  =  window.confirm("Do you want to delete?");
+
+if(flag  ==  true )
+{
+	// Ok	
+}
+else
+{
+	//  Cancel 
+}
+-----------------------------------------------------------------------------------------
+
+  
+
+
+Processing DOM elements using JavaScript
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+--> Access the DOM object
+		var  paraObj  =  document.getElementById("p1");
+		var txtObj  	=  document.getElementById("t1");
+		var imgObj  	=  document.getElementById("img1");
+	 	
+		
+--> Access the content of DOM object  :    get and set
+
+	a.  Pair Tags:			 p, span, div, h1, td, ......	
+					--->		innerText ,  innerHTML   			(textContents)
+					
+	b.  Single Tags:		img ,  input, link, ......
+							--->   attributes    as properties
+							
+							Eg:		imgObj.src
+										inputObj.value
+										inputObj.maxLength
+										.....
+							
+--------------------------------------------------------------------------------------------------
+
+
+  

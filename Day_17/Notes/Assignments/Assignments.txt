@@ -1,0 +1,16 @@
+Assignments
+~~~~~~~~~~~
+1. What are the types of Pop up boxes available in JavaScript ?  Find some more details about pop-boxes? 
+
+2.  Update the login example to apply styles to result message. 
+		a.  Welcome message display in Green color
+		b.  Invalid message display in Red color
+		
+	Hint : Apply styles to html tags using javascript
+
+3.   Create a web page to process product details using JavaScript.  Calculate total amount based on the given values.  (Refer the Image)
+
+4.   Create a web page to perform all math operations (Add, Sub, Multiply) using JavaScript. (Refer the Image)
+
+
+ 
