@@ -13,4 +13,14 @@ Assignments
 4.   Create a web page to perform all math operations (Add, Sub, Multiply) using JavaScript. (Refer the Image)
 
 
- 
+5.  Create a web page to display the following messages  in list format  :
+		Welcome to JavaScript - 1
+		Welcome to JavaScript - 2
+		Welcome to JavaScript - 3
+		.....
+		Welcome to JavaScript - 3
+		
+		Hint : Generate the output in <ul> tag.  Try with all loops.  Refer the image for sample output.
+		
+6.  Update the above example to apply alternate items different colors using javascript
+		Colors  :		Blue / Green
