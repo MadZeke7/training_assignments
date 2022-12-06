@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+    <style>
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .green{
+            color:green;
+        }
+        .blue{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Loops using UL</h1>
+    <section id="buttons">
+        <button onclick="whileLoop()">While Loop</button>
+        <button onclick="doWhileLoop()">Do Loop</button>
+        <button onclick="forLoop()">For Loop</button>
+    </section>
+    <ul></ul>
+
+    <script>
+        const ul = document.querySelector("ul");
+        let className = "";
+        
+        // While Loop
+        function whileLoop(){
+            ul.innerHTML = "";
+            let i = 1;
+            while(i <= 10){
+                if(i%2==0){
+                    className = "green";
+                }
+                else{
+                    className = "blue";
+                }
+                ul.innerHTML += "<li class=" + className + ">Welcome to JavaScript -" + i + "</li>";
+                i++;
+            }
+        }
+
+        //Do While Loop
+        function doWhileLoop(){
+            ul.innerHTML = "";
+            let i = 1;
+            do{
+                if(i%2==0){
+                    ul.innerHTML += "<li style=\"color:blue\" " + ">Welcome to JavaScript -" + i + "</li>";
+                }
+                else{
+                    ul.innerHTML += "<li style=\"color:green\" " + ">Welcome to JavaScript -" + i + "</li>";
+                }
+                i++;
+            } 
+            while(i<10);
+        }
+
+        //For Loop
+        function forLoop(){
+            ul.innerHTML = "";
+            for(let i=0; i<10; i++){
+                let li = document.createElement("li");
+                li.textContent = "Welcome to JavaScript -" + i;
+                if(i%2==0){
+                    li.style.color = "blue";
+                }
+                else{
+                    li.style.color = "green";
+                }
+                ul.append(li);
+            }
+        }
+    </script>
+</body>
+</html>
