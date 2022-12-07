@@ -24,3 +24,13 @@ Assignments
 		
 6.  Update the above example to apply alternate items different colors using javascript
 		Colors  :		Blue / Green
+		
+		
+7.  	Create a web page to display technology names in the table format (Refer the Image: Assignment-7).
+
+		a. By default table should be empty
+		b. Show the data on button click
+		
+8.  	Create a web page to display technology names in the table format (Refer the Image: Assignment-8).
+			a.  Each row should  four items
+			b.  Next items should repeat in next row	 
