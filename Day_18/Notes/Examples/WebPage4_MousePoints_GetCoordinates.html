@@ -1,0 +1,27 @@
+<html>
+<body>
+
+<h2>Getting Coordinates using JavaScript</h2>
+<hr/>
+
+ 
+<img   onmousemove="fn_getMousePosition()"
+			src="Images/Image1.jpg" 
+			alt="Workplace" 
+			usemap="#workmap" 
+			width="400" height="379"  />
+			
+<h1 id="x"></h1>
+
+ 
+ <script>
+	function   fn_getMousePosition()
+	{
+		var obj = document.getElementById("x");
+		obj.innerText  = "X = " + event.clientX + ",  Y = " + event.clientY;
+	}	
+ </script>
+
+</body>
+</html>
+

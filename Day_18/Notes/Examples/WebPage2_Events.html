@@ -1,0 +1,25 @@
+<html>
+	<head></head>
+	<body>
+		<h3>JavaScript Programming -- Event Handling </h3>
+		<hr/> 
+		
+		<br/><br/>
+		<img   src="Images/Image1.jpg"  onmouseover="fn_updateImage('img1')"  id="img1"  border="2"  width="80"  height="60"  />
+		<img   src="Images/Image2.jpg"  onmouseover="fn_updateImage('img2')"  id="img2"  border="2"  width="80"  height="60"  />
+		<img   src="Images/Image3.jpg"  onmouseover="fn_updateImage('img3')"  id="img3"  border="2"  width="80"  height="60"  />
+		<img   src="Images/Image4.jpg"  onmouseover="fn_updateImage('img4')"  id="img4"  border="2"  width="80"  height="60"  />
+		 
+		<hr/>
+		<img   src="Images/Image1.jpg"  id="bigImg"  border="2"  width="340"  height="340"  />
+	 	
+		<script> 
+			  function fn_updateImage( imgId ) 
+			  {
+						var  smImgObj = document.getElementById(imgId);
+						var  bgImgObj =  document.getElementById("bigImg"); 
+						bgImgObj.src =  smImgObj.src;
+			  }		 
+		</script>  
+	</body>
+</html>

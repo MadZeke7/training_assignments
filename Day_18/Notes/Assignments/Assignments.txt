@@ -1,0 +1,76 @@
+Assignment-1
+~~~~~~~~~~~~
+1. What is BOM?  Differences between BOM and DOM?
+2. What is the event target property in JavaScript? 
+
+3. Update the previous example (WebPage5_Arrays_Dynamic.html)  to implement the following requirements:
+
+	a. It does not allow to add duplicates. If you try to add it should show message. 
+	b. If the given item is not exists, you need to show the message while removing the item. 
+	
+4.  Update the yesterday example (	all math operations -- assignment4) using single function for all operations.  Use target property to implement this. 	
+
+5.  Create a web page to display products based on the selected category.
+
+		a. Drop-down should show list of categories :   Laptops, Mobile Phones, Sound Systems etc...
+		b. Take 3 spearate arrays to store the products
+		c.  Based on the selected category you have to get items from the corresponding array and   load the items in list format. 
+
+
+
+
+
+
+
+
+
+
+
+
+2.   Update the Forms Example (FileName :  WebPage4_Forms.html)  so that textbox should give error if it has only spaces. 
+
+3.   Create a web page to display the branch photo based on the branch that is selected in drop-down.  
+	a.  Drop-down should provide branch names :  Hyderabad, Pune, Bangalore, Chennai
+	b.  display the image based on the selected city
+ 
+4.  Create a web page to perform validations using javascript forms.
+
+		a.   Customer Name :    Required
+		b.   Source Station   
+		c.   Destination Station  :  Source station & destination should not be same
+		d.   Contact Number  :  Required,  should have 10 digits
+		
+		(Hint :  Do not use HTML5 attributes )
+  ---------------------------------------------------------------------------------------------------
+  
+  Assignment-2
+  ~~~~~~~~~~~~~
+  
+ 5.  Observe the output of the following statements:
+		a.   console.log(  parseInt("123Hello")  );
+		b.   console.log(  parseInt("Hello123")  );
+		c.   console.log(  parseInt("Hi123Hello")  );
+		d.   console.log(  parseInt("123")  );
+		
+6.   Find the details about following methods of Array:
+			Find(),  FindIndex(),  Filter()
+  
+
+				
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
