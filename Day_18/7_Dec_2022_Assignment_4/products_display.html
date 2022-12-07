@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Products</title>
+    <style>
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <select onchange="showList()">
+        <option>Forwards</option>
+        <option>Midfielders</option>
+        <option>Defenders</option>
+        <option>Goalkeepers</option>
+    </select>
+    <ul id="items"></ul>
+
+    <script>
+        const ulObject = document.getElementById("items");
+        const selectObj = document.querySelector("select");
+        const forwards = ["Ronaldinho", "Bergkamp", "Zidane", "Lionel Messi", "Quaresma"];
+        const midfielders = ["Iniesta", "Xavi", "Xabi Alonso", "Gerrard", "Pirlo"];
+        const defenders = ["Van Dijk", "Ferdinand", "Vidic", "Puyol", "Ramos"];
+        const keepers = ["Allison", "Neuer", "Yassine Bounou", "Lev Yashin", "Buffon"];
+
+        function populateUL(ul, array){
+            for(let i=0; i<array.length; i++){
+                ul.innerHTML += "<li>" + array[i] + "</li>";
+            }
+        }
+
+        function showList(){
+            ulObject.innerHTML = "";
+
+            if(selectObj.value == "Forwards"){
+                populateUL(ulObject, forwards);
+            }
+            else if(selectObj.value == "Midfielders"){
+                populateUL(ulObject, midfielders);
+            }
+            else if(selectObj.value == "Defenders"){
+                populateUL(ulObject, defenders);
+            }
+            else{
+                populateUL(ulObject, keepers);
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Operations</title>
+</head>
+<body>
+    <h1>Mathematical Operations</h1>
+    <form>
+        <input type="number" name="first" id="first">
+        <input type="number" name="second" id="second">
+    </form>
+    <section id="buttons">
+        <button id="add" onclick="calc(event)">Add</button>
+        <button id="subtract" onclick="calc(event)">Subtract</button>
+        <button id="multiply" onclick="calc(event)">Multiply</button>
+    </section>
+    <p id="result"></p>
+    
+    <script>
+        const firstObj = document.getElementById("first");
+        const secondObj = document.getElementById("second");
+        const result = document.getElementById("result");
+
+        function calc(e){
+            if(e.target.id=="add"){
+                result.textContent = parseInt(firstObj.value) + parseInt(secondObj.value);
+            }
+            else if(e.target.id=="subtract"){
+                result.textContent = parseInt(firstObj.value) - parseInt(secondObj.value);
+            }
+            else{
+                result.textContent = parseInt(firstObj.value) * parseInt(secondObj.value);
+            }
+        }
+
+    </script>
+</body>
+</html>
