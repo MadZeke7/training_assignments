@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data</title>
+    </head>
+    <body>
+        <table id="dataset">
+            <tr>
+                <th>Name</th>
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+        </table>
+
+        <script>
+            const data = [
+                {
+                    "Name": "Alfreds Futterkiste",
+                    "City": "Berlin",
+                    "Country": "Germany"
+                },
+                {
+                    "Name": "Ana Trujillo Emparedados y helados",
+                    "City": "México D.F.",
+                    "Country": "Mexico"
+                },
+                {
+                    "Name": "Antonio Moreno Taquería",
+                    "City": "México D.F.",
+                    "Country": "Mexico"
+                },
+                {
+                    "Name": "Around the Horn",
+                    "City": "London",
+                    "Country": "UK"
+                }, {
+                    "Name": "B's Beverages",
+                    "City": "London",
+                    "Country": "UK"
+                }, {
+                    "Name": "Berglunds snabbköp",
+                    "City": "Luleå",
+                    "Country": "Sweden"
+                }, {
+                    "Name": "Blauer See Delikatessen",
+                    "City": "Mannheim",
+                    "Country": "Germany"
+                }, {
+                    "Name": "Blondel père et fils",
+                    "City": "Strasbourg",
+                    "Country": "France"
+                }, {
+                    "Name": "Bólido Comidas preparadas",
+                    "City": "Madrid",
+                    "Country": "Spain"
+                }, {
+                    "Name": "Bon app'",
+                    "City": "Marseille",
+                    "Country": "France"
+                }, {
+                    "Name": "Bottom-Dollar Marketse",
+                    "City": "Tsawassen",
+                    "Country": "Canada"
+                }, {
+                    "Name": "Cactus Comidas para llevar",
+                    "City": "Buenos Aires",
+                    "Country": "Argentina"
+                }, {
+                    "Name": "Centro comercial Moctezuma",
+                    "City": "México D.F.",
+                    "Country": "Mexico"
+                }, {
+                    "Name": "Chop-suey Chinese",
+                    "City": "Bern",
+                    "Country": "Switzerland"
+                }, {
+                    "Name": "Comércio Mineiro",
+                    "City": "São Paulo",
+                    "Country": "Brazil"
+                }
+            ];
+
+            const tableObj = document.getElementById("dataset");
+            let str = "";
+            
+            for (let i = 0; i < data.length; i++) {
+                str += "<tr>";
+                str += "<td>" + data[i]["Name"] + "</td>";
+                str += "<td>" + data[i]["City"] + "</td>";
+                str += "<td>" + data[i]["Country"] + "</td>";
+                str += "</tr>";
+            }
+
+            tableObj.innerHTML += str;
+        </script>
+    </body>
+</html>

@@ -29,3 +29,9 @@ Here map1 is the new array created using array1 where every element will be incr
 A)  find() : Returns the value of the first element that passes a test.
     findIndex() : Similar to "find" function but returns the index.
     filter() :  Returns an array filtered down to just the elements from the original array that pass the test implemented by the provided function.
+
+6.  Create a web page to display customers data using Array of objects. 
+
+		Hint :  copy the data from the below url :				
+					https://www.w3schools.com/angular/customers.php
+					https://reqres.in/api/users
