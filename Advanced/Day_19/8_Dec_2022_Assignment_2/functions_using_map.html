@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const citiesArray  = [ "Hyderabad", "Mumbai",  "Bangalore", "Gurgaon"];
+
+        function upperCaseFunction(str){
+            return str.toUpperCase();
+        }
+
+        const upperCaseArr = citiesArray.map(upperCaseFunction);
+        const firstThreeArr = citiesArray.map( function(str){
+            return str[0]+str[1]+str[2];
+        })
+        const replacedArr = citiesArray.map( (str)=>{
+            let newStr = "";
+            for(let i=0; i<str.length; i++){
+                if(str[i] == "a"){
+                    newStr+="@";
+                }
+                else{
+                    newStr+=str[i];
+                }
+            }
+            return newStr;
+        })
+
+        console.log(upperCaseArr);
+        console.log(firstThreeArr);
+        console.log(replacedArr);
+    </script>
+</body>
+</html>

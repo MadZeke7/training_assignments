@@ -9,3 +9,23 @@ A) Regular expression is a sequence of character which define a specific pattern
 A) The map() method creates a new array populated with the results of calling a provided function on every element in the calling array. 
 Example: const map1 = array1.map(x => x+2);
 Here map1 is the new array created using array1 where every element will be incremented by 2. 
+
+3.  Create a web page to define the functions for the following requirements:
+
+			a.  Function to find out the no. of even numbers in the given array .
+			b.  Function to find out power value  ( x power y)
+			c.   Function to return no. of words in the given string.  
+
+4.   Create a web page to perform the following operations on given array using Map() method :
+
+			  var citiesArray  = [ "Hyderabad", "Mumbai",  "Bangalore", "Gurgaon"];
+		
+				a.  Get the item items in uppercase format     (Named)
+				b.  Get the first three characters of the each item  (Anonymous)
+				c.  Get  the items that should replace the "a" with "@"  (Arrow)
+				
+5. Find the details about following methods of Array:
+					Find(),  FindIndex(),  Filter()
+A)  find() : Returns the value of the first element that passes a test.
+    findIndex() : Similar to "find" function but returns the index.
+    filter() :  Returns an array filtered down to just the elements from the original array that pass the test implemented by the provided function.
