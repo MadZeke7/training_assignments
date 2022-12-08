@@ -16,6 +16,19 @@ Assignment-1
 		b. Take 3 spearate arrays to store the products
 		c.  Based on the selected category you have to get items from the corresponding array and   load the items in list format. 
 
+6.  Create a web page to perform validations using javascript forms.
+
+		a.   Customer Name :    Required
+		b.   Source Station   
+		c.   Destination Station  :  Source station & destination should not be same
+		d.   Contact Number  :  Required,  should have 10 digits
+		e.    E-mail   :  Required
+		
+		(Hint :  Do not use HTML5 attributes )
+		
+		
+7.   What is difference between  indexOf()  and findIndex()
+
 
 
 

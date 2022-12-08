@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgba(212, 212, 209, 0.5);
+        }
+        span{
+            color:red;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            border: 13px solid lightblue;
+            padding: 20px 20px;
+        }
+        div{
+            display: flex;
+            gap:15px;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+            <label>Name: </label>
+            <input type="text" id="name"><span id="nameS">*</span>
+        </div>
+        
+        <div>
+            <label>Source: </label>
+            <input type="text" id="source">
+        </div>
+
+        <div>
+            <label>Destination: </label>
+            <input type="text" id="destination"><span id="sourceDestS"></span>
+        </div>
+
+        <div>
+            <label>Contact: </label>
+            <input type="text" id="contact"><span id="contactS">*</span>
+        </div>
+
+        <div>
+            <label>Email: </label>
+            <input type="text" id="email"><span id="emailS">*</span>
+        </div>
+
+        <button onclick="submitForm(event)">Submit Form</button>
+    </form>
+    
+    <script>
+        const nameSpan = document.getElementById("nameS");
+        const sourceDestSpan = document.getElementById("sourceDestS");
+        const contactSpan = document.getElementById("contactS");
+        const emailSpan = document.getElementById("emailS");
+
+        function submitForm(e){
+            e.preventDefault();
+
+            const name = document.getElementById("name");
+            const source = document.getElementById("source")
+            const destination = document.getElementById("destination")
+            const contact = document.getElementById("contact");
+            const email = document.getElementById("email");
+
+            // Name is required
+            if(name.value==""){
+                nameSpan.style.color = "red"
+                nameSpan.textContent = "Name is required";
+            }
+            else{
+                nameSpan.style.color = "green";
+                nameSpan.textContent = "Condition satisfied";
+            }
+        
+            // condition on source and destination
+            if(source.value.toUpperCase() == destination.value.toUpperCase() || source.value == "" || destination.value == ""){
+                sourceDestSpan.style.color = "red"
+                sourceDestSpan.textContent = "Source and Destination should be filled and shouldn't be same";
+            }
+            else{
+                sourceDestSpan.style.color = "green";
+                sourceDestSpan.textContent = "Condition satisfied";
+            }
+
+            // Condition on contact number
+            if(contact.value.length != 10 || typeof(parseInt(contact.value))!="number"){
+                contactSpan.style.color = "red";
+                contactSpan.textContent = "Contact number should be 10 digits long and should be valid";
+            }
+            else{
+                contactSpan.style.color = "green";
+                contactSpan.textContent = "Condition satisfied";
+            }
+
+            //Condition on email
+            if(email.value == ""){
+                emailSpan.style.color = "red";
+                emailSpan.textContent = "Email is required";
+            }
+            else{
+                emailSpan.style.color = "green";
+                emailSpan.textContent = "Condition satisfied";
+            }
+
+        }
+    </script>
+</body>
+</html>
