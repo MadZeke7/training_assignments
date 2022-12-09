@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Names</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        table{
+            margin-top:20px;
+        }
+        table, th, td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Employee Entries</h1>
+    <form onsubmit="formSubmit(event)">
+        <div>
+            <label>Employee Number</label>
+            <input type="number" name="empno" id="empno">
+        </div>
+
+        <div>
+            <label>Employee Name</label>
+            <input type="text" name="empname" id="empname">
+        </div>
+
+        <div>
+            <label>Job</label>
+            <input type="text" name="job" id="job">
+        </div>
+
+        <div>
+            <label>Salary</label>
+            <input type="number" name="salary" id="salary">
+        </div>
+
+        <input type="submit" value="Add to Table">
+    </form>
+
+    <table id="datatable">
+        <tr>
+            <th>Emp No.</th>
+            <th>Emp Name</th>
+            <th>Job</th>
+            <th>Salary</th>
+        </tr>
+    </table>
+
+    <script>
+        function formSubmit(e){
+
+            e.preventDefault();
+
+            const empno = document.getElementById("empno").value;
+            const empname = document.getElementById("empname").value;
+            const job = document.getElementById("job").value;
+            const salary = document.getElementById("salary").value;
+
+            const tableObj = document.getElementById("datatable");
+
+            let str = "";
+            str += `<tr> <td> ${empno} </td>`
+            str += `<td> ${empname} </td>`
+            str += `<td> ${job} </td>`
+            str += `<td> ${salary} </td> </tr>`
+
+            tableObj.innerHTML += str;
+        }
+    </script>
+</body>
+</html>

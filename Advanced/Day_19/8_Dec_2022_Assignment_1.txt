@@ -35,3 +35,8 @@ A)  find() : Returns the value of the first element that passes a test.
 		Hint :  copy the data from the below url :				
 					https://www.w3schools.com/angular/customers.php
 					https://reqres.in/api/users
+
+7. Create a web page to prepare employee object with the following properties:
+				
+				a.  empno, ename, job, sal, deptno
+				b.  Implement all three techniques to create object

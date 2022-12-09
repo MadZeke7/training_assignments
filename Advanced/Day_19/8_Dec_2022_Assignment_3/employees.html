@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees</title>
+</head>
+<body>
+    <script>
+
+        // Object Initializer
+        const employee1 = {
+            "empno": 773519,
+            "ename": "Evin Daniel Renji",
+            "job": 'Analyst',
+            "sal": 2000000000,
+            "deptNo": '1'
+        };
+
+        //Empty Object
+        const employee2 = {};
+        employee2.empno = 774293;
+        employee2.ename = "Shravan Sainath Lingala";
+        employee2.salary = 10;
+        employee2.job = "Analyst";
+        employee2.deptNo = 1;
+
+        // Constructor function
+        function employee(){
+            this.empno = 774291;
+            this.ename = "Maithalee Sawant";
+            this.salary = 10;
+            this.job = "Analyst";
+            this.deptNo = 1;
+        }
+
+        const employee3 = new employee();
+
+        // Testing
+        console.log(employee1)
+        console.log(employee2)
+        console.log(employee3)
+    </script>
+</body>
+</html>
