@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers Table Fetching</title>
+    <style>
+        td, th, table{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h3>Asynchronous Programming in  JavaScript</h3>	
+	<button  onclick="fn_getData()">Get Data </button>
+	
+    <table  id="t1">
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+        </tr>
+    </table>
+
+    <script>
+        const tableObj = document.getElementById("t1");
+		
+        function fn_getData(){ 
+            const url = "https://www.w3schools.com/angular/customers.php";
+            
+            fetch(url).then(  (response)  => {
+                response.json().then( (resData)=> { 
+                    displayData(resData.records);
+                });
+            }).catch((error) => 
+            {
+                    tableObj.innerHTML = "";
+                    tableObj.innerHTML  +=  "<li  style='color:red;'>" + error +  "</li>"
+            });
+        }  
+        
+        
+        function  displayData( dataArray ){
+            let str = "";
+            for(let item of dataArray){
+                str += "<tr>";
+                str +=  "<td>" + item.Name + "</td>";
+                str +=  "<td>" + item.City + "</td>";
+                str += "</tr>";
+            } 
+            tableObj.innerHTML += str;
+        }
+        
+    </script>
+</body>
+</html>

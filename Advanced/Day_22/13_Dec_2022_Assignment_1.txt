@@ -9,3 +9,15 @@ function sayHi() {
 
 setTimeout(sayHi, 1000);
 setInterval(sayHi, 1000);
+
+2.  Create a web page to display customers data in table format.  Use fetch() to communicate with server 
+
+	url :  https://www.w3schools.com/angular/customers.php
+
+	Hint :  Update the previous  example with table tags. 
+
+3.  Create a web  page  to implement the following requirement:
+		a.  Add a button to Show data. 
+		b.  Write the code to get the data from the following url using fetch() 
+					https://reqres.in/api/users
+		c.  Display the data in tabel format
