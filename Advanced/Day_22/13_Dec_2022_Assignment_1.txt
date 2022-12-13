@@ -1,0 +1,11 @@
+1. What is setInterval()  and setTimeout() methods in JavaScript? 
+A) i) setTimeout allows us to run a function once after the interval of time.
+ii) setInterval allows us to run a function repeatedly, starting after the interval of time, then repeating continuously at that interval.
+
+Example: 
+function sayHi() {
+  alert('Hello');
+}
+
+setTimeout(sayHi, 1000);
+setInterval(sayHi, 1000);
