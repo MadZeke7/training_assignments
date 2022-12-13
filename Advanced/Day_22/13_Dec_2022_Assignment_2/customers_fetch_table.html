@@ -15,12 +15,7 @@
     <h3>Asynchronous Programming in  JavaScript</h3>	
 	<button  onclick="fn_getData()">Get Data </button>
 	
-    <table  id="t1">
-        <tr>
-            <th>Name</th>
-            <th>City</th>
-        </tr>
-    </table>
+    <table  id="t1"></table>
 
     <script>
         const tableObj = document.getElementById("t1");
@@ -42,13 +37,14 @@
         
         function  displayData( dataArray ){
             let str = "";
+            str+= "<tr> <th>Name</th> <th>City</th> </tr>";
             for(let item of dataArray){
                 str += "<tr>";
                 str +=  "<td>" + item.Name + "</td>";
                 str +=  "<td>" + item.City + "</td>";
                 str += "</tr>";
             } 
-            tableObj.innerHTML += str;
+            tableObj.innerHTML = str;
         }
         
     </script>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customers Table Fetching</title>
+    <title>Users Table Fetching</title>
     <style>
         td, th, table{
             border: 2px solid black;
@@ -16,15 +16,7 @@
     <h3>Asynchronous Programming in  JavaScript</h3>	
 	<button  onclick="fn_getData()">Get Data </button>
 	
-    <table  id="t1">
-        <tr>
-            <th>Id</th>
-            <th>Email</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Avatar</th>
-        </tr>
-    </table>
+    <table  id="t1"></table>
 
     <script>
         const tableObj = document.getElementById("t1");
@@ -46,6 +38,8 @@
         
         function  displayData( dataArray ){
             let str = "";
+            str+= "<tr> <th>Id</th> <th>Email</th> <th>First Name</th> <th>Last Name</th> <th>Avatar</th> </tr>"
+            
             for(let item of dataArray){
                 str += "<tr>";
                 str +=  "<td>" + item.id + "</td>";
@@ -55,7 +49,7 @@
                 str +=  "<td><img src=\"" + item.avatar + "\" alt=\"avatar\" />" + "</td>";
                 str += "</tr>";
             } 
-            tableObj.innerHTML += str;
+            tableObj.innerHTML = str;
         }
         
     </script>
