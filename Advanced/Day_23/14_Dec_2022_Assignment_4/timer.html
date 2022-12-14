@@ -6,17 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timer</title>
     <script  src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <style>
+        span{
+            font-size: 4rem;
+        }
+
+        button{
+            padding: 6px;
+            border-radius: 3px;
+        }
+
+        #start{
+            background-color:green;
+            color:white;
+        }
+
+        #stop{
+            background-color:red;
+            color:white;
+        }
+
+    </style>
 </head>
 <body>
-    <span id="minutes">00</span>
-    <span>:</span>
-    <span id="seconds">00</span>
-    <span>:</span>
-    <span id="tenmilliseconds">00</span>
+    <div>
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+        <span>:</span>
+        <span id="tenmilliseconds">00</span>
+    </div>
 
-    <button onclick="start()">Start</button>
-    <button onclick="stop()">Stop</button>
-    <button onclick="reset()">Reset</button>
+    <button id="start" onclick="start()">Start</button>
+    <button id="stop" onclick="stop()">Stop</button>
+    <button id="reset" onclick="reset()">Reset</button>
 
     <script>
         let minutes = 0;
@@ -25,7 +48,13 @@
         
         let interval;
 
+        let checkStartClicked = false;
+
         function start(){
+            if(checkStartClicked){
+                return;    
+            }
+            
             interval = setInterval(function() {
                 tenmilliseconds += 1;
                 if(tenmilliseconds == 100){
@@ -42,10 +71,13 @@
                 $('#tenmilliseconds').text(getIntInString(tenmilliseconds));
                 
             }, 10);
+
+            checkStartClicked = true;
         }
 
         function stop(){
             clearInterval(interval);
+            checkStartClicked = false;
         }
 
         function reset(){
@@ -61,6 +93,8 @@
             $('#minutes').text(getIntInString(minutes));
             $('#seconds').text(getIntInString(seconds));
             $('#tenmilliseconds').text(getIntInString(tenmilliseconds));
+
+            checkStartClicked = false;
         }
 
         // Function to show numbers in 2 digit format
