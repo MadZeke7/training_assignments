@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <script  src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+</head>
+<body>
+    <span id="minutes">00</span>
+    <span>:</span>
+    <span id="seconds">00</span>
+    <span>:</span>
+    <span id="tenmilliseconds">00</span>
+
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">Stop</button>
+    <button onclick="reset()">Reset</button>
+
+    <script>
+        let minutes = 0;
+        let seconds = 0;
+        let tenmilliseconds = 0;
+        
+        let interval;
+
+        function start(){
+            interval = setInterval(function() {
+                tenmilliseconds += 1;
+                if(tenmilliseconds == 100){
+                    seconds += 1;
+                    tenmilliseconds = 0;
+                }
+                if(seconds == 60){
+                    minutes += 1;
+                    seconds = 0;
+                }
+
+                $('#minutes').text(getIntInString(minutes));
+                $('#seconds').text(getIntInString(seconds));
+                $('#tenmilliseconds').text(getIntInString(tenmilliseconds));
+                
+            }, 10);
+        }
+
+        function stop(){
+            clearInterval(interval);
+        }
+
+        function reset(){
+            // Removing intervalFunction
+            clearInterval(interval);
+
+            //Resetting counts
+            tenmilliseconds = 0;
+            seconds = 0;
+            minutes = 0;
+            
+            // Resetting displays
+            $('#minutes').text(getIntInString(minutes));
+            $('#seconds').text(getIntInString(seconds));
+            $('#tenmilliseconds').text(getIntInString(tenmilliseconds));
+        }
+
+        // Function to show numbers in 2 digit format
+        function getIntInString(number){
+            if(number/10 == 0){
+                return "00";
+            }
+            else if(number/10 < 1){
+                return "0" + number;
+            }
+            else{
+                return number;
+            }
+        }
+    </script>
+</body>
+</html>
