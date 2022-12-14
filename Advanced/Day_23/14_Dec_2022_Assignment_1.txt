@@ -1,0 +1,12 @@
+1. How to hide html element using JavaScript?
+A) Store the element as a DOM node in a variable. Set the display property of its style to none.
+    Consider the variable to be "domnode", then 
+        domNode.style.display = 'none';
+    will give the required result 
+
+2. How to change text color of all paragraphs in the document using JavaScript?
+A) Select the p elements using "getElementsByTagName", then iterate over the result and set .style.color to set the required color. 
+    const collection = document.getElementsByTagName("p");
+    for(let item of collection){
+        item.style.color = "blue";
+    }
