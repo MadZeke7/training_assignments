@@ -10,3 +10,8 @@ A) Select the p elements using "getElementsByTagName", then iterate over the res
     for(let item of collection){
         item.style.color = "blue";
     }
+    
+3.  Create a web page to perform the following operations using jquery:	
+		a.  Get product details from user:		Product Name, Unit Price, Quantity
+		b.  Display total amount based on price and qty
+		c.   If the qty is greater than 10,  give 10% discount on total amount

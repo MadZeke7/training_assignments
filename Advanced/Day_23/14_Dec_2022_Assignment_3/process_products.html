@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <script  src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <style>
+        body{
+            font-family: 'Arial', sans-serif;
+        }
+        input{
+            display: block;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="calculate(event)">
+        <input type="text" placeholder="Product Name" id="name">    
+        <input type="number" placeholder="Product Unit Price" id="price">    
+        <input type="number" placeholder="Quantity" id="quantity">   
+        <input type="submit" value="Get Total"> 
+    </form>
+    <p id="total"></p>
+    <script>
+        function calculate(e){
+            event.preventDefault();
+
+            const quantity = parseInt($("#quantity").val());
+            const price = parseInt($("#price").val() );
+
+            let totalPrice = quantity * price;
+            
+            if(quantity > 10){
+                $("#total").text("Your total amount is " + totalPrice + ". You have availed a 10% discount for buying > 10 items, which brings your total to " + totalPrice*0.9 + '.');
+                totalPrice *= 0.9;
+            }
+            else{
+                $("#total").text("Your total amount is " + totalPrice);
+            }
+            
+
+            // const quantity = document.getElementById("quantity").value;
+            // const price = document.getElementById("price").value;
+            
+            // const total = document.getElementById("total");
+            // total.textContent = "Total comes out to be " + quantity*price;
+            
+        }
+    </script>
+</body>
+</html>
