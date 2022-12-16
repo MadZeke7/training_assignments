@@ -1,0 +1,10 @@
+Animate method 
+~~~~~~~~~~~~~~~
+
+$(selector).animate( object,  duration );
+$(selector).animate( object,  duration, callback );
+
+$(selector).animate( {prop:value, ..... },  interval );
+$(selector).animate( {width :  "200px"},  2000 );
+
+

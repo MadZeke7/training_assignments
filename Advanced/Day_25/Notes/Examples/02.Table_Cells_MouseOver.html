@@ -1,0 +1,54 @@
+  <!-- Apply multiple styles using jQuery CSS Method -->
+  <html>
+	<head></head>			
+	<body>
+	<h3>Applying Styles using jQuery</h3>
+	<hr>	
+	<table   id="table1"     border="1" cellspacing="0" align="center" 
+					width="300">
+		<tr>
+			<td>First Name  : </td>
+			<td> Steve </td>
+		</tr>
+		
+		<tr>
+			<td>Last Name  : </td>
+			<td> Smith </td>
+		</tr>
+		
+		<tr>
+			<td>Phone Number  : </td>
+			<td>+91-965465456 </td>
+		</tr>
+		
+		<tr>
+			<td>Email Id  : </td>
+			<td> steve@gmail.com </td>
+		</tr> 
+		 
+	</table>
+
+	<script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	
+	
+	<script>
+			$("#table1  td").css( { "background-color":"lightyellow",  "color" : "green"  } );
+			
+			var  fColor =  $("#table1 td").css("color");		
+			var  bColor =  $("#table1 td").css("background-color");
+								
+			$("#table1  td").mouseover(function()
+			{		
+					$(this).css( {  "background-color":  fColor,  "color" : bColor  } );
+			});
+			
+			$("#table1  td").mouseout(function()
+			{				
+					$(this).css( {  "background-color":  bColor,  "color" : fColor  } );
+			});
+	
+	</script>
+	
+</body>
+</html>
+	

@@ -1,0 +1,65 @@
+<!-- Create a web page to change the textbox styles using jquery  -->
+<html>
+<head> </head>
+<body>
+<h3> Developing Web Page</h3>
+<hr/>  
+
+	<table  style="border:0px solid Blue;" border="0" align="center">
+		<tr>
+			<td>Customer Name  :  </td>
+			<td><input  type="text"  class="c1"  />  </td>
+		</tr>
+		
+		<tr>
+			<td>City Name  :  </td>
+			<td><input type="text" class="c1" />  </td>
+		</tr>
+		
+		<tr>
+			<td>E-mail Id  :  </td>
+			<td><input type="text" class="c1" />  </td>
+		</tr>
+		
+		<tr>
+			<td>Phone Number  :  </td>
+			<td><input type="text" class="c1" />  </td>
+		</tr>
+		
+		<tr>
+			<td> </td>
+			<td><input type="submit" />  </td>
+		</tr>
+		
+	</table>
+
+	  
+	
+	 
+	<script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	
+	
+	<script>
+	
+			$(document).ready(function()
+			{			
+					$("input[type='text']").focus(function()
+					{
+						// $(this).css("background-color", "pink");
+						 $(this).css({ "background-color" :  "pink", "color"  :  "red"});
+					});
+					
+					$("input[type='text']").blur(function()
+					{
+						 //$(this).css("background-color", "white");
+						 $(this).css({ "background-color" :  "white", "color"  :  "black"});
+					});
+					
+			});		
+		
+	
+	</script>
+	
+</body>
+</html>
+	

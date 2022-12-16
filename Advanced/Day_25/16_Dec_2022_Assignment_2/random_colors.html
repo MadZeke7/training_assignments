@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Colour</title>
+    <script  src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <style>
+        table td{
+            border: 2px solid black;
+        } 
+    </style>
+</head>
+<body>
+    <table id="table1">
+        <tr>
+            <td>Name</td>
+            <td>Evin</td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td>Homeless</td>
+        </tr>
+        <tr>
+            <td>Job</td>
+            <td>Jobless</td>
+        </tr>
+    </table>
+
+    <script>
+
+        const colours = ["pink", "green", "red", "blue", "black", "yellow"]
+
+        const selectedColour = colours[Math.floor(Math.random() * colours.length)];
+        console.log(selectedColour)
+
+        $("#table1 td").mouseover( () =>{
+            $(this).css({"background-color": selectedColour, "color" :"white"});
+        })
+        
+        $("#table1 td").mouseout( () => {
+            $(this).css({"background-color": "white", "color":selectedColour});
+        })
+
+    </script>
+</body>
+</html>

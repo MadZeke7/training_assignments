@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script  src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <title>Toggle classes</title>
+    <style>
+        div{
+            border: 2px solid blue;
+            padding: 10px;
+        }
+
+        .boldtext{
+            font-weight: bold;
+        }
+
+        .italictext{
+            font-style: italic;
+        }
+
+        .underline{
+            text-decoration: underline;
+        }
+
+        .selected{
+            background-color:blue;
+            color:white;
+            border : 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Example to Toggle Classes</h1>
+    </header>
+    <main>
+        <section>
+            <button>Bold</button>
+            <button>Italic</button>
+            <button>Underline</button>
+        </section>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eum officiis quam quis perferendis neque aliquam aperiam. Eum, vitae rerum rem odio excepturi facere dolores repudiandae numquam iste, minima doloremque. Voluptates ex sed, ullam voluptatem unde consequuntur nemo accusamus, repellendus quas minus voluptatum veniam facilis sapiente debitis nobis quidem molestiae culpa dolor commodi? Magnam nostrum, alias pariatur, iusto mollitia numquam voluptatum optio veritatis nihil praesentium, voluptas voluptatem incidunt! Porro quae placeat sunt facere ratione nam doloribus eum tempore soluta. Quas maiores incidunt, nemo ipsa unde perspiciatis ex et similique adipisci dolorum distinctio explicabo corrupti nam nisi, ut, esse sapiente a?</div>
+    </main>
+
+    <script>
+        $("button:eq(0)").click(function(){
+            $("div").toggleClass("boldtext");
+            $(this).toggleClass("selected");
+        })
+
+        $("button:eq(1)").click(function(){
+            $("div").toggleClass("italictext");
+            $(this).toggleClass("selected");
+        })
+
+        $("button:eq(2)").click(function(){
+            $("div").toggleClass("underline");
+            $(this).toggleClass("selected");
+        })
+    </script>
+</body>
+</html>
