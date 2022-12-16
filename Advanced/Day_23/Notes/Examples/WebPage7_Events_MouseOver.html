@@ -1,0 +1,30 @@
+<html>
+	<head></head>
+	<body>
+		<h3>JavaScript Programming -- Event Handling </h3>
+		<hr/> 
+		
+		<br/><br/>
+		<img   src="Images/Image1.jpg"  class="c1"  border="2"  width="80"  height="60"  />
+		<img   src="Images/Image2.jpg"  class="c1"  border="2"  width="80"  height="60"  />
+		<img   src="Images/Image3.jpg"  class="c1"  border="2"  width="80"  height="60"  />
+		<img   src="Images/Image4.jpg"  class="c1"  border="2"  width="80"  height="60"  />
+		 
+		<hr/>
+		<img   src="Images/Image1.jpg"  id="bigImg"  border="2"  width="340"  height="340"  />
+	 	
+		<script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	
+		<script>	
+			$(document).ready(function()
+			{
+					$(".c1").mouseover	(function()
+					{
+						  let str =  $(this).attr("src");						  
+						  $("#bigImg").attr("src",  str);						  
+					});
+			});
+		</script>
+ 
+	</body>
+</html>

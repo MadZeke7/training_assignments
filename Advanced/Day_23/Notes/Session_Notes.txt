@@ -1,0 +1,89 @@
+jQuery Programming
+~~~~~~~~~~~~~~~~~~
+
+
+jQuery = $ 		-->		 factory function 
+
+  
+
+jQuery:
+	$("#p1").html("Message prepared using jQuery");
+	
+javascript:
+	document.getElementById("p1").innerHTML =  "Message prepared using jQuery";
+
+
+Selectors in jQuery
+-----------------------------
+Access html elements  (dom traversing)   :  
+
+$("tagname")
+$("#id")
+$(".classname")
+$("parent  child")
+$("h1,   p") 
+$("*") 
+
+$(document)
+$(this)
+
+----------------------------------------------------
+
+
+Access content
+~~~~~~~~~~~~~~
+1.   html()			---			innerHTML
+2.   text()				---			innerText
+3.   val()				---				value			(input, textarea, select)
+4.    attr("name", "value")
+
+		$("#img1").attr("src", "Image1.jpg")		// set 
+		$("#img1").attr("width", "500")			// set 
+		
+		let  str  =  $("#img1").attr("src");		// get 
+		
+		
+		$("#t1").val("Hello");  	// set 
+		let str  =  $("#t1").val();  	// get 
+
+
+Event Handling 
+~~~~~~~~~~~~~
+
+JavaScript:
+		<input type="text"  onclick="fn_getData()"  value="Get Data" / >
+		
+		function  fn_getData()
+		{
+			.....				
+		}
+		
+	jQuery :
+		<input type="text"  id="b1"   value="Get Data" / >
+		
+	Syntax:	$("#b1").click( callback );
+		
+	Eg:
+		$("#b1").click( function()
+		{
+				// code 				
+		});
+		
+		 
+			
+		
+		
+		
+How to not allowing the user to edit the textbox?
+		
+		<input  disabled  ..... />
+		<input  readonly  ..... />
+		
+		
+		
+		
+
+
+ 
+
+

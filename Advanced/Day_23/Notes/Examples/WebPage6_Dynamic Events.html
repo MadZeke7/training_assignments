@@ -1,0 +1,64 @@
+<!-- Create a web page to apply events dynamically at runtime using jQuery  -->
+<html>
+	<head> </head>	
+	<body>
+	<h1> Dynamic Event Handling using jQuery  </h1>
+	<hr></hr>	
+Select Event : 
+		<select id="List1">
+			<option>click</option>
+			<option>mouseover</option>
+		</select>
+	<br></br>
+<button id="b1">Add Event</button>	
+<button id="b2">Remove Event</button>	
+ 
+<br>
+	 
+	<p id="p1" style="border:1px solid Blue; padding : 5px; ">This is test paragraph. This is test paragraph. This is test paragraph. This is test paragraph. This is test paragraph. This is test paragraph. This is test paragraph. This is test paragraph.  This is test paragraph.  </p>
+	
+	
+<script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	
+	<script>	
+		$(document).ready(function()
+		{
+				 $("#b1").click(function()  
+				 {				 
+						$("#p1").css("background-color",  "lightyellow");
+						
+						let eventName =  $("#List1").val();
+						$("#p1").bind(eventName,  function()
+						{
+								alert("Message from paragraph. Event : " + eventName);
+						});
+					 			
+				 });
+				 
+				  $("#b2").click(function()  
+				 {	 
+						$("#p1").css("background-color",  "white");				
+						let eventName =  $("#List1").val();
+						$("#p1").unbind(eventName);	
+				 });
+		});			
+	</script>
+	
+ </body>
+</html>
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+

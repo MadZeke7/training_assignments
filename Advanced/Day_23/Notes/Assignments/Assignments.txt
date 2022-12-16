@@ -1,0 +1,18 @@
+Assignments
+~~~~~~~~~~~
+1. How to hide html element using JavaScript?
+2. How to change text color of all paragraphs in the document using JavaScript?
+3. How to change text color of all paragraphs in the document using jquery?
+
+4.  Create a web page to perform the following operations using jquery:	
+		a.  Get product details from user:		Product Name, Unit Price, Quantity
+		b.  Display total amount based on price and qty
+		c.   If the qty is greater than 10,  give 10% discount on total amount 
+
+5.  How to select all textboxes using jQuery selector?
+6.  What is the difference between   "this" and  $(this) in jquery programming?
+7. Create timer example using jQuery? (Refer the image)
+
+-----------------------------------------------------------------------------------------------------
+
+ 

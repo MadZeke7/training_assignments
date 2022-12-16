@@ -1,0 +1,6 @@
+1. How to add CSS class to html tag using jquery?
+A) We can use the addClass() method to add a class to a particular selector.
+
+2.  How to apply effect based on width property?
+A) The animate() method performs a custom animation of a set of CSS properties. 
+    Syntax: (selector).animate({styles},speed,easing,callback)

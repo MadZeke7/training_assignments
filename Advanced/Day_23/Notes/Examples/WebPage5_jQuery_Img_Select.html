@@ -1,0 +1,42 @@
+<html>
+	<head></head>
+	<body>
+		<h3>Developing Web Pages using jQuery</h3>
+		<hr/>
+	
+		
+		Select Image  :  
+		<select id="s1" >
+			<option>Image1.png</option>
+			<option>Image2.png</option>
+			<option>Image3.png</option>
+			<option>Image4.png</option>
+			<option>Image5.png</option>
+			<option>Image6.png</option>	
+		</select>
+		
+	 
+		
+		<br/><br/>
+		<img   src="Images5/Image1.png"  id="img1"  border="2"  width="200"  height="300"  />
+	 		
+		<script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>	
+			
+		<script>			
+		
+		
+		
+		$(document).ready(function()
+		{
+				$("#s1").change(function()
+				{
+					let  str  = "Images5/" +  $("#s1").val();
+				 	$("#img1").attr("src",  str);
+				});		
+		});
+			
+			
+		 
+		</script> 
+	</body>
+</html>
