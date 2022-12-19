@@ -27,6 +27,9 @@
         
 
         $("button").click(function(){
+
+            $("#table1").html("");
+
             // First part
             let cardNumber = "****-****-****-" + customerObj["cardNumber"].toString().slice(-4);
             createRowAndCells("Credit Card Number", cardNumber);

@@ -1,0 +1,92 @@
+1.  Introduction to Angular
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+		1. Angular JS		----		2010	----   JavaScript	---	Controller
+		2. Angular			-----		2016	----	TypeScript 	---	Component 
+
+
+		*ngIf
+		*ngFor	
+		ngModel
+	 	 
+		
+		
+	TypeScript  
+	Framework 	=		Library + Runtime
+	Web Applications 
+
+	 
+
+
+2. Environment Setup for Angular
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1.  Install node
+		https://nodejs.org/en/
+		
+	>	node    -v
+	>  npm     -v
+	
+		npm ---  node package manager
+		
+2.   Install Angular CLI 	(Command Line Interface )
+
+		>  	npm   install   -g     @angular/cli  
+		
+3.    ng  version
+
+4.   ng  new  my-project
+
+5.  cd  my-project
+
+6.   ng   s  -o
+
+		
+		
+
+		
+3. Components
+~~~~~~~~~~~	
+
+
+/my-project/src/app 
+	
+	
+	app.component.ts		---		application logic
+			--- javascript
+			--- es6 + oop concepts
+			--- typescript
+			
+	app.component.html	---		ui logic 
+	
+	
+	app.component.css		---		styles for component
+	app.component.spec.ts	---	unit testing specification
+	
+		
+		
+		
+	Every component = user defined tag 
+	
+	
+	<app-emps />
+	<app-product-details>
+	<app-rating   />
+	.....
+	
+	
+	
+	<app-emps />
+	
+	
+	---> UI Logic 
+			-->  employee details  in table format 			
+							--> html tags  & css
+			
+	--->  Application Logic / Business Logic 
+
+
+    
+	 
+
+	
