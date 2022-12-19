@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script  src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <title>String Manipulation</title>
+    <style>
+        table, td, tr{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>String Manipulation</h1>
+    </header>
+
+    <main>
+        <button>Get Data</button>
+        <table id="table1"></table>
+    </main>
+
+    <script>
+        const customerObj =  { cardNumber  :   1234456778997896,  chName : "Narasimha Rao",  cardType : "Visa",  expireMonth : 12,  expireYear : 2023};
+        
+
+        $("button").click(function(){
+            // First part
+            let cardNumber = "****-****-****-" + customerObj["cardNumber"].toString().slice(-4);
+            createRowAndCells("Credit Card Number", cardNumber);
+
+            // Second part
+            createRowAndCells("Credit Card Holder", customerObj["chName"]);
+
+            // Third Part
+            createRowAndCells("Card Type", customerObj["cardType"]);
+            
+            // Fourth Part
+            const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"]
+            let month = months[customerObj["expireMonth"] - 1];
+            createRowAndCells("Expiry time", `${month} ${customerObj["expireYear"].toString()}` );
+        })
+
+        function createRowAndCells(value1, value2){
+            let row = document.createElement("tr");
+
+            let cell1 = document.createElement("td");
+            let cell2 = document.createElement("td");
+            
+            cell1.textContent = value1;
+            cell2.textContent = value2;
+
+            row.append(cell1)
+            row.append(cell2)
+            
+            $("#table1").append(row);
+        }
+    </script>
+</body>
+</html>
