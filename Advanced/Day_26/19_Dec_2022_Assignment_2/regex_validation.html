@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script  src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <title>Regex Validation</title>
+    <style>
+        .error{
+            color:red;
+        }
+        div{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Validations in regex</h1>
+    </header>
+
+    <main>
+        <div>
+            <input id="name" type="text" placeholder="Name">
+        </div>
+        <div>
+            <input id="contact" type="number" placeholder="Contact Number">
+        </div>
+        <div>
+            <input id="vehicle" type="text" placeholder="Vehicle Number">
+        </div>
+        <div>
+            <input id="city" type="text" placeholder="City Name">
+        </div>
+    </main>
+
+    <script>
+        $("#name").keyup(function(){
+            $("#sp1").remove();
+
+            const name = /^[A-Za-z]{1,10}$/
+            const value = $(this).val(); 
+
+            if(name.test(value) == false && value.length > 0){
+                $(this).after('<span id="sp1" class="error">Enter Valid Name</span>');
+            }
+        })
+
+        $("#contact").keyup(function(){
+            $("#sp2").remove();
+
+            const number = /^\d{10}$/
+            const value = $(this).val(); 
+
+            if(number.test(value) == false && value.length > 0){
+                $(this).after('<span id="sp2" class="error">Enter Valid Contact Number</span>');
+            }
+        })
+
+        $("#vehicle").keyup(function(){
+            $("#sp3").remove();
+
+            const vehicle = /^[A-Z]{2}\d{2}[A-Z]{2}\d{4}$/
+            const value = $(this).val(); 
+
+            if(vehicle.test(value) == false && value.length > 0){
+                $(this).after('<span id="sp3" class="error">Enter Valid Vehicle Number</span>');
+            }
+        })
+
+        $("#city").keyup(function(){
+            $("#sp4").remove();
+
+            const city = /^[A-Z]+$/
+            const value = $(this).val(); 
+
+            if(city.test(value) == false && value.length > 0){
+                $(this).after('<span id="sp4" class="error">City Name should be in capital letters</span>');
+            }
+        })
+    </script>
+</body>
+</html>
