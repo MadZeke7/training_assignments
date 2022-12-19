@@ -1,0 +1,31 @@
+Assignments
+~~~~~~~~~~~
+
+1.  Check the regular expression details 
+2.  Create a web page to read csv string from the user and display the values of csv string in list format (Refer the image).  Final result should be display in uppercase format. 
+
+	
+3. Create a web page to implement the following validations using regular expressions in jQuery:
+		a.  Person Name  :   should have allow 10 characters (Only Alphabets)
+		b.  Person Contact Number  :    exact 10 numbers
+		c.  Vehicle Number  :   AA11AA1111   (Sample Format) 
+		d.  City Name  :   Allows only capital letters 
+
+Reference Urls:
+https://www.w3schools.com/jsref/jsref_obj_regexp.asp
+http://www.designchemical.com/blog/index.php/jquery/form-validation-using-jquery-and-regular-expressions/
+
+
+4.   Create a web page to display the following details in table format. Use string methods to format the data  : 
+
+	Sample data object:	
+	let customerObj = {  cardNumber  :   1234456778997896,  chName : "Narasimha Rao",  cardType : "Visa",  expireMonth : 12,  expireYear : 2023};
+	
+	Output should in the following format in table tag:    
+
+	Credit Card Number		----			****-****-****-7896
+	Card Holder Name 		----			Narasimha Rao
+	Card Type 			    ----			VISA				
+	Expiry Date				----			Jan 2023
+	
+ 

@@ -1,0 +1,62 @@
+<html>
+ <head> 
+ </head>
+ <body>
+	<h3> jQuery Programming -- Custom Function </h3>
+	<hr />
+	
+	
+	<input type="button"  id="b1"  value="Get Data - Reverse By Char"   />
+	<input type="button"  id="b2"  value="Get Data - Reverse By Word"   />
+	<h3  id="result"></h3>
+	<hr/>
+	
+			
+	<script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	
+	<script>
+		
+	$(document).ready(function(){ 
+				$.fn.charcterReverse   =  function(inputStr)
+				{			
+							let  arr  =  inputStr.split('');		
+							arr.reverse();			
+							let  outputResult  =  arr.join('');			
+							return outputResult;
+				};
+				
+				$.fn.wordReverse   =  function(inputStr)
+				{			
+							let  arr  =  inputStr.split(' ');		
+							arr.reverse();			
+							let  outputResult  =  arr.join(' ');			
+							return outputResult;
+				};
+	});
+	
+	
+	$(document).ready(function(){  
+	
+		$("#b1").click(function()
+		{
+				let  str  =  "welcome to jquery programming";		 
+				let  strResult  =   $.fn.charcterReverse(str);		
+				$("#result").html(str  +  "<br/>" +  strResult);
+		});
+		
+		$("#b2").click(function()
+		{
+				let  str  =  "welcome to jquery programming";			 		
+				let  strResult  =   $.fn.wordReverse(str);				
+				$("#result").html(str  +  "<br/>" +  strResult);
+		});
+			
+	});
+	
+	
+	</script>
+	
+ </body>
+</html>
+
+ 
