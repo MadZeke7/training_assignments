@@ -1,0 +1,19 @@
+1.  Go through the following url to know more details about package.json:
+		https://heynode.com/tutorial/what-packagejson/#:~:text=Recap-,The%20package.,entry%20point%20to%20our%20package.
+
+2.  Create a node js application to implement the following requirements:
+
+			a.  Create a module called Product module 
+			b.  Define the methods for the following requirements:
+					i.   Returns all products
+					ii.  Returns products belongs to given category
+					iii. Returns products whose price is between given range
+					iv. Return products that are out of stock
+					iv. Return products that are in of stock
+					
+			c.  Import the Product module in index file and access the methods that are available in product module. Display the results. 
+				
+ 
+
+
+ 
