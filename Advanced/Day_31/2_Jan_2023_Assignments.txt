@@ -19,3 +19,36 @@ Answer: The ng-hide directive hides the HTML element if the expression evaluates
             <h1>Welcome</h1>
             <p>Welcome to my home.</p>
             </div>
+
+5. What  is interface in TypeScript? Why do we use?
+A) An interface defines the syntax that any entity must adhere to. Interfaces define properties, methods, and events, which are the members of the interface. Interfaces contain only the declaration of the members. It is the responsibility of the deriving class to define the members.Example: 
+    interface IPerson { 
+        firstName:string, 
+        lastName:string, 
+        sayHi: ()=>string 
+    } 
+
+    var customer:IPerson = { 
+        firstName:"Tom",
+        lastName:"Hanks", 
+        sayHi: ():string =>{return "Hi there"} 
+    }
+
+
+
+6. Create typescript program to find the maximum of value of the given numbers.
+
+	a.  Use spread attribute concepts
+	b.  Pass different no. of numbers to function
+	c.  display the maximum value 
+
+7.  Perform the following operations in Angular Application
+
+		a.  Create a new component :		Employee
+		b.  Prepare the component so that it should display Employee Details
+					Employee  Id 	:		10256
+					Employee  Name 	:		Scott
+					Employee  Job 	:		Manager
+					Employee  Deptno 	:		10
+					
+		c.   Use Employee component tag in app component to see the result
