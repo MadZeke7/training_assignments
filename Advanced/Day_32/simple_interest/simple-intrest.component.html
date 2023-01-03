@@ -1,0 +1,51 @@
+<style>
+    main{
+        min-height:100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: rgb(123, 208, 237);
+        margin:0;
+        color:white;
+    }
+    input,select{
+        width: 100%;
+    }
+    button{
+        margin: 10px;
+        padding: 5px;
+        font-weight: 700;
+        border-radius: 4px;
+        color:rgb(123, 208, 237);
+        background-color: white;
+        border:0;
+    }
+</style>
+<main>
+    <h1>Simple Interest Calculator</h1>
+
+    <section>
+        <div>
+            <p>Principal Amount:</p>
+            <input type="number" [(ngModel)]="principal"/>
+        </div>
+        <div>
+            <p>Rate % per year:</p>
+            <input type="number" [(ngModel)]="rate"/>
+        </div>
+        <div>
+            <p>Time Period(In years):</p>
+            <select [(ngModel)]="time">
+                <option value="2">2</option>
+                <option value="5">5</option>
+                <option value="7">7</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+        <button (click)="calculate()">Calculate Interest</button>
+    </section>
+
+    <p ng-show="variable">{{message}}</p>
+</main>

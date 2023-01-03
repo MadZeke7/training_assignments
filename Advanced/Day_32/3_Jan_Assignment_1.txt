@@ -1,2 +1,26 @@
 1. What is data binding in Angular? Why do we use it?
 A) Data binding in AngularJS is the synchronization between the model and the view. When data in the model changes, the view reflects the change, and when data in the view changes, the model is updated as well. This happens immediately and automatically, which makes sure that the model and the view is updated at all times.
+
+2. How to get index of the current item while using *ngFor?
+A) <div *ngFor="let item of items; let i = index">
+            <p>The index of {{item}} is: {{i}}</p>
+        </div>
+
+        <div *ngFor="let item of items; index as i;">
+            <p>The index of {{item}} is: {{i}}</p>
+        </div>
+
+
+3. Update the Login example to set color for result message.
+		Valid :		Green color
+		Invalid :  Red Color
+
+4. Calculate  simple interest  based on the user input:
+
+	a.  Get the following details from user:
+			--  Principal Amount
+			-- Annual Interest rate  :    
+			-- Period (in years) :		(use drop-down for this)
+	b. After button click event calculate interest and total amount display on the screen. 
+	
+	
