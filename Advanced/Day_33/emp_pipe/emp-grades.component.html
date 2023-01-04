@@ -1,0 +1,22 @@
+<style>
+    table, tr, td, th{
+        border: 2px solid black;
+    }
+</style>
+
+<h1>Employee Grades</h1>
+
+<table>
+    <tr>
+        <th>S. No.</th>
+        <th>Employee Name</th>
+        <th>Performance Grades</th>
+        <th>Piped outputs</th>
+    </tr>
+    <tr *ngFor="let item of employees | salrangepipe : 10000 : 50000; let i = index">
+        <td>{{i+1}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.grades}}</td>
+        <td>{{item.grades | gradepipe}}</td>
+    </tr>
+</table>
