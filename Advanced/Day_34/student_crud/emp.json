@@ -1,0 +1,60 @@
+{
+  "employees": [
+    {
+      "empNo": 1,
+      "ename": "Scott",
+      "location": "Hyderabad",
+      "sal": "75000",
+      "deptNo": "25"
+    },
+    {
+      "empNo": 2,
+      "ename": "James",
+      "location": "Pune",
+      "sal": "70000",
+      "deptNo": "26"
+    },
+    {
+      "empNo": 3,
+      "ename": "Naveen",
+      "location": "Chennai",
+      "sal": "73000",
+      "deptNo": "24"
+    },
+    {
+      "empNo": 4,
+      "ename": "Srini",
+      "location": "Hyd",
+      "sal": "80000",
+      "deptNo": "22"
+    },
+    {
+      "ename": "Naveen",
+      "location": "Chennai",
+      "sal": "76000",
+      "deptNo": "24",
+      "empNo": 5
+    },
+    {
+      "empNo": 7,
+      "ename": "Narasimha",
+      "location": "Hyd",
+      "sal": "79000",
+      "deptNo": "24"
+    },
+    {
+      "ename": "Kiran Kumar",
+      "location": "Pune",
+      "sal": "68546",
+      "deptNo": "26",
+      "empNo": 9
+    },
+    {
+      "ename": "EVIN",
+      "location": "Mumbai",
+      "deptNo": "1",
+      "sal": "100000",
+      "empNo": 10
+    }
+  ]
+}

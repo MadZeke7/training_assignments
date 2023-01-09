@@ -1,0 +1,32 @@
+<h3>AJAX Calls using HttpClient in Angular</h3>
+<hr/>
+
+<input type="text"  [(ngModel)]="ename"  placeholder="Employee Name"  />
+<input type="text"  [(ngModel)]="location"  placeholder="City Name"  />
+<input type="text"  [(ngModel)]="deptNo"  placeholder="Dept Number"  />
+<input type="text"  [(ngModel)]="sal"  placeholder="Salary"  />
+<input type="text"  [(ngModel)]="empNo"  placeholder="Employee no"  />
+<br/><br/>
+
+<input type="button" value="Get Employees" (click)="getData()"  />
+<input type="button" value="Add Employee" (click)="addData()"  />
+<br><br>
+ 
+<table border="2"   cellspacing="0">
+	<tr>
+	  <th>Employee no.</th>
+	  <th>Employee Name</th>
+	  <th>City Name</th>
+	  <th>Dept Number</th>
+	  <th>Salary</th>    
+	</tr>
+
+	<tr *ngFor="let item of employees">
+	  <td>{{item.empNo}}</td>
+	  <td>{{item.ename }}</td>
+	  <td>{{item.location}}</td>
+	  <td>{{item.deptNo}}</td>
+	  <td>{{item.sal}}</td>    
+      <button (click)="deleteData(item.empNo)">X</button>
+	</tr>
+  </table>

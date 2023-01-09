@@ -1,0 +1,10 @@
+<h1>Customers</h1>
+
+<button (click)="getData()">Get DAta</button>
+
+<main>
+    <div *ngFor="let item of customersArray">
+        <img src="{{item.avatar}}" alt="person" />
+        <p>{{item.first_name}} {{item.last_name}}</p>
+    </div>
+</main>
