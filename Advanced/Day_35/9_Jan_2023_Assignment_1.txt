@@ -1,0 +1,8 @@
+1. What is MVC and MVVM?
+A) Model-View-Controller(MVM) and Model-View-ViewModel are design patterns to help separate the application into logical components to handle specific development aspects of an application. 
+
+2. What are keys in React JS? How to involve keys in array processing in React?
+A) Keys are given to similar elements that are present inside the array to give them a stable identity. Key is given as an attribute to the element. 
+
+3.  Create a react component to display student details in table format
+a. Student Details :   sid, sname, course, age, total
