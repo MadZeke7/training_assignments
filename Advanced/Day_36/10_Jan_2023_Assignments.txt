@@ -1,0 +1,7 @@
+1. What is Single Responsibility Principle?
+A) The Single Responsibility Principle (SRP) is the concept that any single object in object-oriented programing    should be made for one specific function.
+
+2. Create a react component to process product details 
+		a. Read Product Name, Unit Price and Quantity from user
+		b. Calculate total amount 
+		c. Display the results along with product name
