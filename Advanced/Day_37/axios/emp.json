@@ -1,0 +1,9 @@
+{
+  "employees": [
+    {"sid":1, "sname":"Ankeet", "age":22, "course": "Computers", "email":"ankanil@deloitte.com"},
+    {"sid":2, "sname":"Shravan", "age" :22, "course": "Electronics", "email":"shlingala@deloitte.com"},
+    {"sid":3, "sname":"Mitalee", "age" :22, "course": "Electronics", "email":"mitsawant@deloitte.com"},
+    {"sid":4, "sname":"Evin", "age" :21, "course": "Mechanical", "email":"erenji@deloitte.com"},
+    {"sid":5, "sname":"Renji", "age" :54, "course": "IT", "email":"rdaniel@deloitte.com"}
+  ]
+}
